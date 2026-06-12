@@ -36,6 +36,7 @@
   <link rel="preload" href="assets/fonts/karla-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/karla-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/fraunces-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" imagesrcset="assets/hero-nadia-480.jpg 480w, assets/hero-nadia-700.jpg 700w" imagesizes="(max-width: 540px) 78vw, 360px">
   <link rel="stylesheet" href="assets/fonts.css">
   <script type="application/ld+json">
   {
@@ -158,12 +159,13 @@
   .hero-phone{margin-top:var(--space-2);font-size:var(--step-0);color:var(--ink-soft);}
   .hero-phone a{font-weight:700;white-space:nowrap;}
   .breath-stage{position:relative;display:grid;place-items:center;}
-  .breath{width:min(100%,460px);height:auto;}
+  .breath{width:min(100%,520px);height:auto;position:absolute;inset:0;margin:auto;z-index:0;}
   .breath .ring{transform-box:fill-box;transform-origin:center;}
   .js .breath .ring{animation:breathe 9s var(--ease) infinite;}
   .breath .r2{animation-delay:-3s !important;}
   .breath .r3{animation-delay:-6s !important;}
   @keyframes breathe{0%,100%{transform:scale(.96);opacity:.55;}50%{transform:scale(1.03);opacity:1;}}
+  .hero-portrait{position:relative;z-index:1;width:min(78%,360px);height:auto;border-radius:46% 46% 28px 28px / 38% 38% 28px 28px;box-shadow:var(--shadow-lift);border:5px solid var(--paper);}
 
   /* ═══ 4 · VERTRAUENSLEISTE ═══ */
   .trust{background:var(--sand);padding:var(--space-4) 0;border-block:1px solid var(--line);}
@@ -183,9 +185,10 @@
   /* ═══ 6 · LEISTUNGEN ═══ */
   .angebote{background:var(--sage);border-block:1px solid var(--sage-line);}
   .karten{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3);}
-  .karte{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2);box-shadow:var(--shadow);transition:transform .3s var(--ease),box-shadow .3s var(--ease);}
+  .karte{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .3s var(--ease),box-shadow .3s var(--ease);}
   .js .karte:hover{transform:translateY(-4px);box-shadow:var(--shadow-lift);}
-  .karte svg{width:40px;height:40px;}
+  .karte-bild{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block;flex:none;}
+  .karte-body{padding:var(--space-3) var(--space-4) var(--space-4);display:flex;flex-direction:column;gap:var(--space-2);flex:1;}
   .karte h3{font-size:var(--step-2);}
   .karte p{color:var(--ink-soft);font-size:var(--step-0);flex-grow:1;}
   .karte .preis{font-size:var(--step--1);font-weight:700;color:var(--teal-deep);letter-spacing:.04em;text-transform:uppercase;border-top:1px dashed var(--line);padding-top:var(--space-2);}
@@ -205,8 +208,10 @@
   /* ═══ 8 · ÜBER ═══ */
   .ueber .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:var(--space-5);align-items:start;}
   .ueber-figur{position:sticky;top:calc(var(--nav-h) + 20px);}
-  .ueber-figur .rahmen{background:linear-gradient(160deg,var(--sage),var(--sand));border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-4);box-shadow:var(--shadow);}
-  .ueber-figur svg{width:100%;height:auto;}
+  .ueber-figur .rahmen{background:linear-gradient(160deg,var(--sage),var(--sand));border:1px solid var(--line);border-radius:var(--radius-lg);padding:12px;box-shadow:var(--shadow);}
+  .ueber-figur .rahmen > img{width:100%;height:auto;border-radius:14px;display:block;}
+  .ueber-galerie{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px;}
+  .ueber-galerie img{width:100%;height:auto;border-radius:10px;display:block;}
   .ueber-figur figcaption{margin-top:var(--space-2);font-size:var(--step--1);color:var(--ink-soft);text-align:center;}
   .ueber-text h2{font-size:var(--step-4);margin-top:var(--space-2);}
   .ueber-text p{margin-top:var(--space-3);color:var(--ink-soft);line-height:var(--lh-relaxed);}
@@ -413,20 +418,16 @@
       <p class="hero-phone">Oder direkt: <a href="tel:+4981919734751">08191 9734751</a> · Termine meist kurzfristig, auch abends &amp; am Wochenende.</p>
     </div>
     <div class="breath-stage reveal">
-      <!-- Atemkreise: das Markenmotiv — außen positioniert, innen animiert (SVG-transform-Regel) -->
-      <svg class="breath" viewBox="0 0 520 520" role="img" aria-label="Ruhige, konzentrische Kreise — wie ein langsamer Atem">
+      <!-- Atemkreise (Markenmotiv) als Bühne hinter dem Porträt — außen positioniert, innen animiert (SVG-transform-Regel) -->
+      <svg class="breath" viewBox="0 0 520 520" aria-hidden="true" focusable="false">
         <g transform="translate(260 260)">
-          <g class="ring r1"><circle r="238" fill="none" stroke="#2f7a74" stroke-width="1.6" opacity=".35"/></g>
-          <g class="ring r2"><circle r="178" fill="none" stroke="#c4754e" stroke-width="1.4" opacity=".4"/></g>
-          <g class="ring r3"><circle r="120" fill="none" stroke="#2f7a74" stroke-width="1.8" opacity=".55"/></g>
-          <circle r="64" fill="#e9eddc"/>
-          <g transform="translate(0 6)">
-            <path d="M0,-34 C14,-16 14,4 0,22 C-14,4 -14,-16 0,-34 Z" fill="#2f7a74" opacity=".85"/>
-            <path d="M-26,-12 C-8,-12 4,0 8,18 C-12,20 -26,6 -26,-12 Z" fill="#1e5b56" opacity=".6"/>
-            <path d="M26,-12 C8,-12 -4,0 -8,18 C12,20 26,6 26,-12 Z" fill="#1e5b56" opacity=".6"/>
-          </g>
+          <g class="ring r1"><circle r="252" fill="none" stroke="#2f7a74" stroke-width="1.6" opacity=".35"/></g>
+          <g class="ring r2"><circle r="206" fill="none" stroke="#c4754e" stroke-width="1.4" opacity=".4"/></g>
+          <g class="ring r3"><circle r="160" fill="none" stroke="#2f7a74" stroke-width="1.8" opacity=".5"/></g>
         </g>
       </svg>
+      <!-- HIER: Hero-Porträt tauschen (Quelle: Altseite — Porträt-Serie, Rechte-Klärung läuft, s. OFFENE-FRAGEN) -->
+      <img class="hero-portrait" src="assets/hero-nadia-700.jpg" srcset="assets/hero-nadia-480.jpg 480w, assets/hero-nadia-700.jpg 700w" sizes="(max-width: 540px) 78vw, 360px" width="700" height="875" fetchpriority="high" decoding="async" alt="Nadia Michel lächelt freundlich in die Kamera — aufgenommen in ihrer Praxis">
     </div>
   </div>
 </section>
@@ -473,40 +474,52 @@
     </div>
     <div class="karten">
       <article class="karte reveal">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#1e5b56" stroke-width="2" aria-hidden="true"><circle cx="24" cy="24" r="19" opacity=".35"/><circle cx="24" cy="24" r="12" opacity=".6"/><circle cx="24" cy="24" r="5" fill="#1e5b56" stroke="none"/></svg>
-        <h3>Körperpsychotherapie</h3>
-        <p>Einzelbegleitung, die deinen Körper bewusst einbezieht: Wahrnehmen, was sich zeigt — bei alten Mustern, Stress und psychosomatischen Themen.</p>
-        <p class="preis">Sitzung (90 Min.) · 140 €</p>
+        <img class="karte-bild" src="assets/karte-koerper-640.jpg" width="640" height="427" loading="lazy" decoding="async" alt="Nadia in einer Yoga-Haltung vor dem weißen Kamin ihrer Praxis">
+        <div class="karte-body">
+          <h3>Körperpsychotherapie</h3>
+          <p>Einzelbegleitung, die deinen Körper bewusst einbezieht: Wahrnehmen, was sich zeigt — bei alten Mustern, Stress und psychosomatischen Themen.</p>
+          <p class="preis">Sitzung (90 Min.) · 140 €</p>
+        </div>
       </article>
       <article class="karte reveal">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#1e5b56" stroke-width="2" aria-hidden="true"><circle cx="18" cy="24" r="11"/><circle cx="30" cy="24" r="11"/></svg>
-        <h3>Paartherapie</h3>
-        <p>Ein neutraler Raum, in dem beide gehört werden: wiederkehrende Konflikte verstehen, Verletzungen ansprechen, neue Wege im Miteinander erkunden — auch traumasensibel.</p>
-        <p class="preis">Erstgespräch 120 € · Folgetermin (2 Std.) 180 €</p>
+        <img class="karte-bild" src="assets/karte-paar-640.jpg" width="640" height="427" loading="lazy" decoding="async" alt="Nadia im Gespräch am Tisch in ihrer hellen Praxis">
+        <div class="karte-body">
+          <h3>Paartherapie</h3>
+          <p>Ein neutraler Raum, in dem beide gehört werden: wiederkehrende Konflikte verstehen, Verletzungen ansprechen, neue Wege im Miteinander erkunden — auch traumasensibel.</p>
+          <p class="preis">Erstgespräch 120 € · Folgetermin (2 Std.) 180 €</p>
+        </div>
       </article>
       <article class="karte reveal">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#1e5b56" stroke-width="2" aria-hidden="true"><path d="M24 40c-8-6-14-11.5-14-18A8 8 0 0 1 24 15a8 8 0 0 1 14 7c0 6.5-6 12-14 18Z"/></svg>
-        <h3>Sexualtherapie &amp; -beratung</h3>
-        <p>Über Sexualität zu sprechen fällt vielen schwer — dabei gehört sie zu Lebendigkeit und Beziehung. Hier hat sie einen ruhigen, unaufgeregten Platz: allein oder als Paar.</p>
-        <p class="preis">Sitzung (90 Min.) · 140 €</p>
+        <img class="karte-bild" src="assets/karte-sexual-640.jpg" width="640" height="427" loading="lazy" decoding="async" alt="Geschützte Gesprächsecke der Praxis mit Sofa und warmem Licht">
+        <div class="karte-body">
+          <h3>Sexualtherapie &amp; -beratung</h3>
+          <p>Über Sexualität zu sprechen fällt vielen schwer — dabei gehört sie zu Lebendigkeit und Beziehung. Hier hat sie einen ruhigen, unaufgeregten Platz: allein oder als Paar.</p>
+          <p class="preis">Sitzung (90 Min.) · 140 €</p>
+        </div>
       </article>
       <article class="karte reveal">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#1e5b56" stroke-width="2" aria-hidden="true"><path d="M10 30c4-1 6-9 9-9s4 6 7 6 4-12 8-12" opacity=".55"/><path d="M8 38h32M24 38v-6"/></svg>
-        <h3>Traumatherapie</h3>
-        <p>Was zu viel war, darf in deinem Tempo verarbeitet werden — körperorientiert und behutsam, unter anderem mit EMDR und NARM (Bindungstrauma).</p>
-        <p class="preis">Sitzung (90 Min.) · 140 €</p>
+        <img class="karte-bild" src="assets/karte-trauma-640.jpg" width="640" height="427" loading="lazy" decoding="async" alt="Nadia sitzt ruhig in einem Sessel ihrer Praxis — behutsame Atmosphäre">
+        <div class="karte-body">
+          <h3>Traumatherapie</h3>
+          <p>Was zu viel war, darf in deinem Tempo verarbeitet werden — körperorientiert und behutsam, unter anderem mit EMDR und NARM (Bindungstrauma).</p>
+          <p class="preis">Sitzung (90 Min.) · 140 €</p>
+        </div>
       </article>
       <article class="karte reveal">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#1e5b56" stroke-width="2" aria-hidden="true"><path d="M8 24c5-10 11-10 16 0s11 10 16 0" opacity=".8"/><path d="M8 33c5-7 11-7 16 0s11 7 16 0" opacity=".4"/></svg>
-        <h3>Atemtherapie</h3>
-        <p>Dein Atem ist der direkteste Draht zu deinem Nervensystem. Schlicht, kraftvoll, ohne Gedöns — einzeln oder in der Atemgruppe.</p>
-        <p class="preis">Sitzung (2 Std.) · 180 €</p>
+        <img class="karte-bild" src="assets/karte-atem-640.jpg" width="640" height="427" loading="lazy" decoding="async" alt="Nadia sitzt mit geschlossenen Augen in Meditationshaltung">
+        <div class="karte-body">
+          <h3>Atemtherapie</h3>
+          <p>Dein Atem ist der direkteste Draht zu deinem Nervensystem. Schlicht, kraftvoll, ohne Gedöns — einzeln oder in der Atemgruppe.</p>
+          <p class="preis">Sitzung (2 Std.) · 180 €</p>
+        </div>
       </article>
       <article class="karte reveal">
-        <svg viewBox="0 0 48 48" fill="none" stroke="#1e5b56" stroke-width="2" aria-hidden="true"><rect x="7" y="9" width="25" height="30" rx="3"/><path d="m32 19 9-5v20l-9-5"/></svg>
-        <h3>Online &amp; English</h3>
-        <p>Videosprechstunde oder Telefonsitzung, wenn der Weg zu weit ist — flexibel und diskret. Therapy sessions in English, too.</p>
-        <p class="preis">Online-Sitzung · 100 € / Std.</p>
+        <img class="karte-bild" src="assets/praxis-landsberg-860.jpg" width="860" height="645" loading="lazy" decoding="async" alt="Heller, ruhiger Flur der Praxis mit Holzbildern und Korbsessel">
+        <div class="karte-body">
+          <h3>Online &amp; English</h3>
+          <p>Videosprechstunde oder Telefonsitzung, wenn der Weg zu weit ist — flexibel und diskret. Therapy sessions in English, too.</p>
+          <p class="preis">Online-Sitzung · 100 € / Std.</p>
+        </div>
       </article>
     </div>
     <div class="weitere reveal">
@@ -535,10 +548,15 @@
   <div class="wrap">
     <figure class="ueber-figur reveal">
       <div class="rahmen">
-        <!-- HIER: Foto tauschen — Original der Altseite (/kontakt/), Fotografen-Frage in OFFENE-FRAGEN -->
-        <img src="assets/praxis-landsberg-860.jpg" srcset="assets/praxis-landsberg-480.jpg 480w, assets/praxis-landsberg-860.jpg 860w" sizes="(max-width: 900px) 86vw, 430px" width="860" height="645" loading="lazy" decoding="async" alt="Heller, ruhiger Flur der Praxis in Landsberg: Holzbilder, Kommode und Korbsessel" style="border-radius:12px">
+        <!-- HIER: Fotos tauschen — Originale der Altseite, Rechte-Klärung s. OFFENE-FRAGEN -->
+        <img src="assets/ueber-nadia-860.jpg" width="860" height="645" loading="lazy" decoding="async" alt="Nadia Michel lacht herzlich — in ihrer Praxis vor goldenen Wandbildern">
+        <div class="ueber-galerie">
+          <img src="assets/galerie-peru-400.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Nadia in einer Yoga-Haltung hoch über einem Bergtal">
+          <img src="assets/galerie-lama-400.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Nadia füttert lachend ein Lama">
+          <img src="assets/galerie-schnee-400.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Nadia bei einem Winterspaziergang durch tiefen Schnee">
+        </div>
       </div>
-      <figcaption>Die Praxis in Landsberg — ruhige Räume mitten im Zentrum. (Nadias Porträt ergänzen wir nach Foto-Freigabe.)</figcaption>
+      <figcaption>Nadia — und ein paar Stationen ihres Weges.</figcaption>
     </figure>
     <div class="ueber-text">
       <p class="eyebrow reveal">Über mich</p>
@@ -725,15 +743,7 @@
     <div class="anfahrt-grid">
       <div class="ort reveal">
         <div class="karte-svg">
-          <svg viewBox="0 0 360 150" role="img" aria-label="Stilisierte Karte: Praxis Landsberg nahe Hauptplatz, am Lech">
-            <rect width="360" height="150" fill="#e9eddc"/>
-            <path d="M40,160 C60,110 50,70 80,20 L110,20 C85,70 95,110 75,160 Z" fill="#2f7a74" opacity=".3"/>
-            <path d="M120 40h70v26h-70zM150 80h80v22h-80zM120 116h64v20h-64z" fill="#faf6ef" stroke="#dfe5cf"/>
-            <circle cx="262" cy="78" r="11" fill="#c4754e"/>
-            <circle cx="262" cy="78" r="19" fill="none" stroke="#c4754e" opacity=".5"/>
-            <text x="244" y="116" font-family="Karla,Arial" font-size="13" font-weight="700" fill="#2c3b37">Praxis</text>
-            <text x="56" y="28" font-family="Karla,Arial" font-size="12" fill="#1e5b56" opacity=".8">Lech</text>
-          </svg>
+          <img src="assets/anfahrt-landsberg-760.jpg" width="760" height="475" loading="lazy" decoding="async" alt="Bunte Altstadthäuser in Landsberg — die Praxis von der Hubert-von-Herkomer-Straße aus gesehen" style="display:block;width:100%;height:auto">
         </div>
         <h3>Praxis Landsberg am Lech</h3>
         <p class="adresse">Hubert-von-Herkomer-Straße 21 · 86899 Landsberg<br>Eingang auf der Rückseite: <b>Gogglgasse 28</b> — Klingel „Praxis"</p>
