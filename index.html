@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<!--
+  ╔════════════════════════════════════════════════════════════════════╗
+  ║  NADIA MICHEL — Praxis für körperorientierte Psychotherapie         ║
+  ║  Landsberg am Lech & Geretshausen-Weil · One-Pager (DEMO)           ║
+  ║  Gebaut von Lechcode · Single-File, kein Build · Stand 12.06.2026   ║
+  ╠════════════════════════════════════════════════════════════════════╣
+  ║  MODUS: DEMO (unbeauftragt, KALT) —                                  ║
+  ║   • Texte NEU aus belegten Fakten der Altseite (kein Copy!)          ║
+  ║   • keine Altseiten-Fotos (Rechte!) → SVG-Atmosphäre                 ║
+  ║   • Formular = ehrliche Demo (kein Versand)                          ║
+  ║   • noindex bleibt bis Beauftragung + Rechtsseiten + Freigabe        ║
+  ║  Pflege-Stellen: Suche nach "HIER:"                                  ║
+  ╚════════════════════════════════════════════════════════════════════╝
+-->
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>document.documentElement.classList.add('js');if(location.search.indexOf('foto')>-1)document.documentElement.classList.add('foto');</script>
+  <!-- ENTFERNEN sobald Impressum+Datenschutz live & freigegeben -->
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Körperpsychotherapie Landsberg · Paartherapie | Nadia Michel</title>
+  <meta name="description" content="Körperorientierte Psychotherapie, Paartherapie & Sexualtherapie in Landsberg am Lech und Weil — auf Deutsch und Englisch. Kostenloses Kennenlern-Telefonat." />
+  <meta property="og:title" content="Körperpsychotherapie & Paartherapie in Landsberg · Nadia Michel" />
+  <meta property="og:description" content="Wieder zuhause in dir: körperorientierte Psychotherapie, Paar- und Sexualtherapie in Landsberg am Lech & Weil. Termine meist kurzfristig, auch online." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <!-- HIER: beim Go-Live auf echte Domain umstellen -->
+  <meta property="og:url" content="https://lechcode.github.io/nadia-michel-vorschau/" />
+  <meta property="og:image" content="https://lechcode.github.io/nadia-michel-vorschau/assets/og.jpg" />
+  <meta name="theme-color" content="#1e5b56" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e5b56'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%23faf6ef' stroke-width='2.4' opacity='.45'/%3E%3Ccircle cx='32' cy='32' r='13' fill='none' stroke='%23faf6ef' stroke-width='2.4' opacity='.75'/%3E%3Ccircle cx='32' cy='32' r='5.2' fill='%23faf6ef'/%3E%3C/svg%3E" />
+  <!-- Schriften lokal (DSGVO: keine Verbindung zu Google-Servern) -->
+  <link rel="preload" href="assets/fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/karla-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/karla-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Praxis für körperorientierte Psychotherapie – Nadia Michel",
+    "url": "https://www.koerper-orientierte-psychotherapie.de/",
+    "image": "https://lechcode.github.io/nadia-michel-vorschau/assets/og.jpg",
+    "telephone": "+49 8191 9734751",
+    "email": "nadia@koerper-orientierte-psychotherapie.de",
+    "priceRange": "100–180 €",
+    "address": [
+      {"@type": "PostalAddress", "streetAddress": "Hubert-von-Herkomer-Straße 21 (Eingang Gogglgasse 28)", "postalCode": "86899", "addressLocality": "Landsberg am Lech", "addressCountry": "DE"},
+      {"@type": "PostalAddress", "streetAddress": "Mühlangerstraße 5", "addressLocality": "Geretshausen-Weil", "addressCountry": "DE"}
+    ],
+    "areaServed": ["Landsberg am Lech", "Weil", "Kaufering", "Augsburg", "München"],
+    "founder": {
+      "@type": "Person",
+      "name": "Nadia Michel",
+      "jobTitle": "Heilpraktikerin für Psychotherapie",
+      "hasCredential": {"@type": "EducationalOccupationalCredential", "name": "Heilpraktikerin, beschränkt auf das Gebiet der Psychotherapie (HeilprG)"}
+    },
+    "sameAs": [
+      "https://www.doctolib.de/heilpraktiker-fur-psychotherapie/landsberg-am-lech/nadia-michel",
+      "https://soundcloud.com/nadia-michel-828857416",
+      "https://www.instagram.com/therapie_ohne_gedoens/"
+    ]
+  }
+  </script>
+  <style>
+  /* ═══ 1 · TOKENS — Creme · Salbei · Teal · Terrakotta ═══ */
+  :root{
+    --paper:#faf6ef; --sand:#f2ecdf; --sage:#e9eddc; --sage-line:#dfe5cf;
+    --ink:#2c3b37; --ink-soft:#54655e; --ink-faint:#7c8a83;
+    --teal:#2f7a74; --teal-deep:#1e5b56; --teal-night:#22332f;
+    --terra:#c4754e; --terra-soft:#e7c8b4;
+    --line:rgba(44,59,55,.14);
+    --serif:"Fraunces","Fraunces Fallback",Georgia,serif;
+    --sans:"Karla","Karla Fallback",Arial,-apple-system,sans-serif;
+
+    --step--1:clamp(13.5px, .3vw + 12.7px, 14.5px);
+    --step-0:clamp(16px, .4vw + 15px, 17.5px);
+    --step-1:clamp(18px, .65vw + 16.3px, 20.5px);
+    --step-2:clamp(21px, 1.2vw + 17.8px, 25px);
+    --step-3:clamp(25px, 2.1vw + 19px, 34px);
+    --step-4:clamp(30px, 3.5vw + 18px, 47px);
+    --step-5:clamp(36px, 5.8vw + 15px, 72px);
+    --lh-body:1.65; --lh-relaxed:1.75; --lh-snug:1.15;
+    --space-1:clamp(8px, 1vw, 12px);
+    --space-2:clamp(14px, 1.6vw, 18px);
+    --space-3:clamp(20px, 2.4vw, 28px);
+    --space-4:clamp(30px, 3.8vw, 44px);
+    --space-5:clamp(46px, 6vw, 72px);
+    --space-6:clamp(68px, 10vw, 128px);
+    --radius:16px; --radius-lg:26px; --radius-pill:999px;
+    --nav-h:66px;
+    --shadow:0 1px 0 rgba(255,255,255,.65) inset, 0 18px 40px -24px rgba(44,59,55,.28);
+    --shadow-lift:0 1px 0 rgba(255,255,255,.7) inset, 0 26px 52px -26px rgba(30,91,86,.35);
+    --ease:cubic-bezier(.22,.61,.36,1);
+    --focus:0 0 0 3px rgba(47,122,116,.5);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 14px);}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;}}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:var(--step-0);line-height:var(--lh-body);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:var(--lh-snug);letter-spacing:-.015em;color:var(--ink);text-wrap:balance;}
+  h1 em,h2 em{font-style:normal;color:var(--teal-deep);}
+  p{max-width:62ch;}
+  a{color:var(--teal-deep);text-decoration:none;}
+  a:hover{text-decoration:underline;text-underline-offset:3px;}
+  img,svg{display:block;max-width:100%;}
+  ::selection{background:rgba(47,122,116,.22);}
+  :focus-visible{outline:none;box-shadow:var(--focus);border-radius:6px;}
+  .wrap{width:min(1120px,92vw);margin-inline:auto;}
+  section{padding:var(--space-6) 0;position:relative;}
+  .sec-head{max-width:58ch;margin-bottom:var(--space-5);}
+  .sec-head h2{font-size:var(--step-4);margin-top:var(--space-2);}
+  .sec-head p{font-size:var(--step-1);line-height:var(--lh-relaxed);color:var(--ink-soft);margin-top:var(--space-3);}
+  .eyebrow{font-weight:700;font-size:var(--step--1);letter-spacing:.16em;text-transform:uppercase;color:var(--teal);display:inline-flex;align-items:center;gap:9px;}
+  .eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--terra);flex:none;}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--teal-deep);color:var(--paper);padding:12px 20px;border-radius:0 0 12px 0;z-index:200;font-weight:700;}
+  .skip:focus{left:0;}
+
+  /* ═══ 2 · NAV ═══ */
+  .nav{position:fixed;inset:0 0 auto 0;height:var(--nav-h);z-index:100;display:flex;align-items:center;transition:background .3s var(--ease),box-shadow .3s var(--ease);}
+  .nav.scrolled{background:rgba(250,246,239,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line);}
+  .nav .wrap{display:flex;align-items:center;gap:var(--space-3);}
+  .brand{display:flex;align-items:center;gap:11px;color:var(--ink);}
+  .brand:hover{text-decoration:none;}
+  .brand svg{width:34px;height:34px;flex:none;}
+  .brand b{font-family:var(--serif);font-weight:600;font-size:18px;letter-spacing:-.01em;line-height:1.1;display:block;}
+  .brand span{display:block;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);}
+  .nav-links{display:flex;gap:clamp(14px,2vw,26px);margin-left:auto;align-items:center;}
+  .nav-links a{color:var(--ink);font-weight:700;font-size:15px;padding:8px 2px;}
+  .nav-links a:hover{color:var(--teal-deep);text-decoration:none;}
+  .nav-cta{background:var(--teal-deep);color:var(--paper) !important;padding:11px 20px !important;border-radius:var(--radius-pill);box-shadow:var(--shadow);}
+  .nav-cta:hover{background:var(--teal);}
+  .burger{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:12px;width:48px;height:48px;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px;}
+  .burger span{width:20px;height:2px;background:var(--ink);border-radius:2px;transition:transform .25s var(--ease),opacity .2s;}
+  .menu{position:fixed;inset:0;background:var(--paper);z-index:99;display:none;flex-direction:column;align-items:center;justify-content:center;gap:clamp(14px,3vh,26px);text-align:center;}
+  .menu.open{display:flex;}
+  .menu a{font-family:var(--serif);font-size:var(--step-3);color:var(--ink);}
+  .menu .nav-cta{font-family:var(--sans);font-size:var(--step-1);}
+  body.menu-locked{overflow:hidden;}
+
+  /* ═══ 3 · HERO ═══ */
+  .hero{min-height:100svh;display:flex;align-items:center;padding:calc(var(--nav-h) + var(--space-4)) 0 var(--space-5);overflow:hidden;}
+  .foto .hero{min-height:auto;}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--space-5);align-items:center;}
+  .hero-copy .eyebrow{margin-bottom:var(--space-3);}
+  .hero h1{font-size:var(--step-5);letter-spacing:-.02em;}
+  .hero .sub{font-family:var(--serif);font-size:var(--step-2);color:var(--teal-deep);margin-top:var(--space-2);font-weight:600;}
+  .hero .lead{font-size:var(--step-1);line-height:var(--lh-relaxed);color:var(--ink-soft);margin-top:var(--space-3);max-width:54ch;}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:var(--space-2);margin-top:var(--space-3);}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;border:none;font-family:var(--sans);font-weight:700;font-size:16px;padding:15px 26px;border-radius:var(--radius-pill);min-height:48px;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s;}
+  .btn-primary{background:var(--teal-deep);color:var(--paper);box-shadow:var(--shadow-lift);}
+  .btn-primary:hover{background:var(--teal);transform:translateY(-2px);text-decoration:none;}
+  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink);}
+  .btn-ghost:hover{border-color:var(--teal-deep);color:var(--teal-deep);transform:translateY(-2px);text-decoration:none;}
+  .hero-phone{margin-top:var(--space-2);font-size:var(--step-0);color:var(--ink-soft);}
+  .hero-phone a{font-weight:700;white-space:nowrap;}
+  .breath-stage{position:relative;display:grid;place-items:center;}
+  .breath{width:min(100%,460px);height:auto;}
+  .breath .ring{transform-box:fill-box;transform-origin:center;}
+  .js .breath .ring{animation:breathe 9s var(--ease) infinite;}
+  .breath .r2{animation-delay:-3s !important;}
+  .breath .r3{animation-delay:-6s !important;}
+  @keyframes breathe{0%,100%{transform:scale(.96);opacity:.55;}50%{transform:scale(1.03);opacity:1;}}
+
+  /* ═══ 4 · VERTRAUENSLEISTE ═══ */
+  .trust{background:var(--sand);padding:var(--space-4) 0;border-block:1px solid var(--line);}
+  .trust ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-3);}
+  .trust li{display:flex;align-items:flex-start;gap:12px;font-size:var(--step-0);}
+  .trust li b{display:block;font-size:var(--step-1);font-family:var(--serif);font-weight:600;}
+  .trust li span{color:var(--ink-soft);font-size:var(--step--1);}
+  .trust svg{width:26px;height:26px;flex:none;margin-top:3px;}
+
+  /* ═══ 5 · ANLIEGEN ═══ */
+  .anliegen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3);}
+  .anliegen-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:var(--space-3);box-shadow:var(--shadow);}
+  .anliegen-card p{font-family:var(--serif);font-size:var(--step-1);font-weight:600;line-height:1.4;color:var(--ink);}
+  .anliegen-card span{display:block;margin-top:10px;color:var(--ink-soft);font-size:var(--step-0);}
+  .anliegen-note{margin-top:var(--space-4);color:var(--ink-soft);font-size:var(--step-0);max-width:62ch;}
+
+  /* ═══ 6 · LEISTUNGEN ═══ */
+  .angebote{background:var(--sage);border-block:1px solid var(--sage-line);}
+  .karten{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3);}
+  .karte{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2);box-shadow:var(--shadow);transition:transform .3s var(--ease),box-shadow .3s var(--ease);}
+  .js .karte:hover{transform:translateY(-4px);box-shadow:var(--shadow-lift);}
+  .karte svg{width:40px;height:40px;}
+  .karte h3{font-size:var(--step-2);}
+  .karte p{color:var(--ink-soft);font-size:var(--step-0);flex-grow:1;}
+  .karte .preis{font-size:var(--step--1);font-weight:700;color:var(--teal-deep);letter-spacing:.04em;text-transform:uppercase;border-top:1px dashed var(--line);padding-top:var(--space-2);}
+  .weitere{margin-top:var(--space-5);background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-4);box-shadow:var(--shadow);}
+  .weitere h3{font-size:var(--step-2);margin-bottom:var(--space-2);}
+  .weitere ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:var(--space-2);}
+  .weitere li{border:1px solid var(--line);border-radius:var(--radius-pill);padding:9px 16px;font-size:var(--step--1);font-weight:700;color:var(--ink-soft);background:var(--sand);}
+  .weitere p{color:var(--ink-soft);font-size:var(--step-0);}
+
+  /* ═══ 7 · FUNDSTÜCK ═══ */
+  .stimme{background:var(--teal-night);color:var(--paper);text-align:center;}
+  .stimme .wrap{max-width:880px;}
+  .stimme svg{width:54px;height:54px;margin:0 auto var(--space-3);}
+  .stimme blockquote p{font-family:var(--serif);font-style:italic;font-weight:400;font-size:var(--step-3);line-height:1.45;color:#f3eee2;max-width:100%;}
+  .stimme cite{display:block;margin-top:var(--space-3);font-style:normal;font-size:var(--step-0);color:#bfcdc4;letter-spacing:.06em;}
+
+  /* ═══ 8 · ÜBER ═══ */
+  .ueber .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:var(--space-5);align-items:start;}
+  .ueber-figur{position:sticky;top:calc(var(--nav-h) + 20px);}
+  .ueber-figur .rahmen{background:linear-gradient(160deg,var(--sage),var(--sand));border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-4);box-shadow:var(--shadow);}
+  .ueber-figur svg{width:100%;height:auto;}
+  .ueber-figur figcaption{margin-top:var(--space-2);font-size:var(--step--1);color:var(--ink-soft);text-align:center;}
+  .ueber-text h2{font-size:var(--step-4);margin-top:var(--space-2);}
+  .ueber-text p{margin-top:var(--space-3);color:var(--ink-soft);line-height:var(--lh-relaxed);}
+  .ueber-text p b{color:var(--ink);}
+  .quali{margin-top:var(--space-4);border-top:1px solid var(--line);padding-top:var(--space-3);}
+  .quali h3{font-size:var(--step-1);margin-bottom:var(--space-2);}
+  .quali ul{list-style:none;display:flex;flex-wrap:wrap;gap:9px;}
+  .quali li{border:1px solid var(--line);background:#fff;border-radius:var(--radius-pill);padding:8px 15px;font-size:var(--step--1);font-weight:700;color:var(--ink-soft);}
+  .hpg-box{margin-top:var(--space-4);background:var(--sand);border-left:4px solid var(--teal);border-radius:0 var(--radius) var(--radius) 0;padding:var(--space-3);}
+  .hpg-box p{font-size:var(--step--1);color:var(--ink-soft);margin-top:6px;}
+  .hpg-box b{font-size:var(--step-0);color:var(--ink);}
+
+  /* ═══ 9 · RICHTIG HIER? ═══ */
+  .richtig{background:var(--sand);border-block:1px solid var(--line);}
+  .richtig-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);}
+  .richtig-col{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-4);box-shadow:var(--shadow);}
+  .richtig-col h3{font-size:var(--step-2);margin-bottom:var(--space-3);}
+  .richtig-col ul{list-style:none;display:grid;gap:var(--space-2);}
+  .richtig-col li{display:flex;gap:11px;align-items:flex-start;color:var(--ink-soft);}
+  .richtig-col li svg{width:21px;height:21px;flex:none;margin-top:3px;}
+  .notfall{margin-top:var(--space-4);background:#fff;border:1.5px solid var(--terra);border-radius:var(--radius);padding:var(--space-3);}
+  .notfall b{color:var(--ink);}
+  .notfall p{font-size:var(--step-0);color:var(--ink-soft);margin-top:6px;max-width:100%;}
+  .notfall a{white-space:nowrap;font-weight:700;}
+
+  /* ═══ 10 · ABLAUF ═══ */
+  .ablauf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3);counter-reset:schritt;}
+  .schritt{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-4);box-shadow:var(--shadow);}
+  .schritt::before{counter-increment:schritt;content:counter(schritt);position:absolute;top:-18px;left:var(--space-4);width:38px;height:38px;border-radius:50%;background:var(--teal-deep);color:var(--paper);font-family:var(--serif);font-weight:600;font-size:19px;display:grid;place-items:center;box-shadow:var(--shadow);}
+  .schritt h3{font-size:var(--step-2);margin-top:var(--space-1);}
+  .schritt p{color:var(--ink-soft);margin-top:var(--space-2);font-size:var(--step-0);}
+  .schritt .meta{display:inline-block;margin-top:var(--space-2);font-size:var(--step--1);font-weight:700;color:var(--teal-deep);letter-spacing:.05em;text-transform:uppercase;}
+
+  /* ═══ 11 · HONORAR ═══ */
+  .honorar{background:var(--sage);border-block:1px solid var(--sage-line);}
+  .honorar-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--space-4);align-items:start;}
+  .preisliste{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:var(--shadow);overflow:hidden;}
+  .preisliste .zeile{display:flex;justify-content:space-between;align-items:baseline;gap:var(--space-2);padding:var(--space-3) var(--space-4);border-bottom:1px dashed var(--line);}
+  .preisliste .zeile:last-child{border-bottom:none;}
+  .preisliste .was b{display:block;font-family:var(--serif);font-weight:600;font-size:var(--step-1);}
+  .preisliste .was span{font-size:var(--step--1);color:var(--ink-soft);}
+  .preisliste .preis{font-family:var(--serif);font-weight:600;font-size:var(--step-2);color:var(--teal-deep);white-space:nowrap;font-variant-numeric:tabular-nums;}
+  .kassen-box{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-4);box-shadow:var(--shadow);}
+  .kassen-box h3{font-size:var(--step-2);}
+  .kassen-box p{color:var(--ink-soft);font-size:var(--step-0);margin-top:var(--space-2);}
+  .kassen-box ul{list-style:none;margin-top:var(--space-2);display:grid;gap:10px;}
+  .kassen-box li{display:flex;gap:10px;align-items:flex-start;color:var(--ink-soft);font-size:var(--step-0);}
+  .kassen-box li svg{width:20px;height:20px;flex:none;margin-top:4px;}
+  .honorar-fine{margin-top:var(--space-3);font-size:var(--step--1);color:var(--ink-faint);}
+
+  /* ═══ 12 · FAQ ═══ */
+  .faq-list{max-width:760px;}
+  .faq-item{border:1px solid var(--line);border-radius:var(--radius);background:#fff;margin-bottom:var(--space-2);box-shadow:var(--shadow);}
+  .faq-item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:var(--space-2);padding:var(--space-3) var(--space-3);font-family:var(--serif);font-weight:600;font-size:var(--step-1);min-height:48px;}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:"+";font-family:var(--sans);font-size:24px;color:var(--teal);flex:none;width:32px;height:32px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;transition:transform .25s var(--ease);}
+  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item .antwort{padding:0 var(--space-3) var(--space-3);color:var(--ink-soft);}
+  .faq-item .antwort p + p{margin-top:10px;}
+
+  /* ═══ 13 · KONTAKT ═══ */
+  .kontakt{background:var(--teal-night);color:var(--paper);}
+  .kontakt .sec-head h2,.kontakt .sec-head p{color:var(--paper);}
+  .kontakt .sec-head h2 em,.stimme h2 em{color:#9ed4cd;}
+  .kontakt .sec-head p{color:#bfcdc4;}
+  .kontakt .eyebrow{color:#8fc4be;}
+  .kontakt-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:var(--space-5);align-items:start;}
+  .k-info{display:grid;gap:var(--space-3);}
+  .k-zeile{display:flex;gap:14px;align-items:flex-start;}
+  .k-zeile svg{width:24px;height:24px;flex:none;margin-top:3px;}
+  .k-zeile b{display:block;font-size:var(--step-0);}
+  .k-zeile a{color:#cfe5e1;font-weight:700;}
+  .k-zeile span{color:#9fb3ab;font-size:var(--step--1);display:block;}
+  .form{background:rgba(250,246,239,.06);border:1px solid rgba(250,246,239,.16);border-radius:var(--radius-lg);padding:var(--space-4);}
+  .demo-hinweis{display:flex;gap:10px;align-items:flex-start;background:rgba(231,200,180,.12);border:1px dashed rgba(231,200,180,.5);border-radius:var(--radius);padding:12px 14px;font-size:var(--step--1);color:#e7c8b4;margin-bottom:var(--space-3);}
+  .form label{display:block;font-weight:700;font-size:var(--step--1);margin-bottom:6px;color:#dfe9e3;}
+  .form input,.form select,.form textarea{width:100%;background:rgba(250,246,239,.95);border:1px solid transparent;border-radius:12px;padding:13px 14px;font-family:var(--sans);font-size:16px;color:var(--ink);margin-bottom:var(--space-2);min-height:48px;}
+  .form textarea{min-height:120px;resize:vertical;}
+  .form input:focus-visible,.form select:focus-visible,.form textarea:focus-visible{box-shadow:var(--focus);}
+  .form .btn-primary{width:100%;background:var(--terra);color:#2b1a10;}
+  .form .btn-primary:hover{background:#d2845c;}
+  .form-fine{font-size:var(--step--1);color:#9fb3ab;margin-top:var(--space-2);}
+  .form-fine a{color:#cfe5e1;}
+  .form-status{display:none;margin-top:var(--space-2);padding:13px 15px;border-radius:12px;font-size:var(--step-0);background:rgba(143,196,190,.18);border:1px solid rgba(143,196,190,.45);color:#dff0ed;}
+
+  /* ═══ 14 · ANFAHRT ═══ */
+  .anfahrt-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);}
+  .ort{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-4);box-shadow:var(--shadow);display:flex;flex-direction:column;gap:var(--space-2);}
+  .ort h3{font-size:var(--step-2);}
+  .ort .adresse{font-weight:700;color:var(--ink);}
+  .ort p{color:var(--ink-soft);font-size:var(--step-0);}
+  .ort .hin{margin-top:auto;padding-top:var(--space-2);}
+  .karte-svg{background:var(--sage);border:1px solid var(--sage-line);border-radius:var(--radius);overflow:hidden;margin-bottom:var(--space-2);}
+
+  /* ═══ 15 · FOOTER ═══ */
+  .site-footer{background:var(--teal-night);color:#bfcdc4;padding:var(--space-5) 0 calc(var(--space-4) + 70px);border-top:1px solid rgba(250,246,239,.12);}
+  .site-footer .wrap{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:var(--space-4);}
+  .site-footer h3{color:var(--paper);font-size:var(--step-1);margin-bottom:var(--space-2);}
+  .site-footer p,.site-footer li{font-size:var(--step--1);line-height:1.7;}
+  .site-footer ul{list-style:none;display:grid;gap:8px;}
+  .site-footer a{color:#cfe5e1;}
+  .foot-note{grid-column:1 / -1;border-top:1px solid rgba(250,246,239,.12);margin-top:var(--space-3);padding-top:var(--space-3);display:flex;flex-wrap:wrap;gap:var(--space-2);justify-content:space-between;font-size:var(--step--1);color:#9fb3ab;}
+
+  /* ═══ 16 · STICKY MOBIL-LEISTE ═══ */
+  .sticky-bar{display:none;}
+
+  /* ═══ 17 · REVEALS & MOTION ═══ */
+  .js .reveal{opacity:0;transform:translateY(18px);transition:opacity .45s var(--ease),transform .45s var(--ease);}
+  .js .reveal.in{opacity:1;transform:none;}
+  .js.foto .reveal{opacity:1 !important;transform:none !important;}
+  @media (prefers-reduced-motion: reduce){
+    .js .reveal{opacity:1;transform:none;transition:none;}
+    .js .breath .ring{animation:none;}
+    .btn,.karte{transition:none;}
+  }
+
+  /* ═══ 18 · RESPONSIVE ═══ */
+  @media (max-width: 900px){
+    .nav-links{display:none;}
+    .burger{display:flex;}
+    .hero .wrap{grid-template-columns:1fr;gap:var(--space-4);}
+    .breath-stage{order:-1;}
+    .breath{width:min(62vw,330px);margin-inline:auto;}
+    .hero{padding-top:calc(var(--nav-h) + var(--space-3));}
+    .trust ul{grid-template-columns:1fr 1fr;}
+    .anliegen-grid,.karten,.ablauf-grid{grid-template-columns:1fr 1fr;}
+    .ueber .wrap{grid-template-columns:1fr;}
+    .ueber-figur{position:static;max-width:430px;}
+    .richtig-grid,.honorar-grid,.kontakt-grid,.anfahrt-grid{grid-template-columns:1fr;}
+    .site-footer .wrap{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width: 540px){
+    .trust ul{grid-template-columns:1fr;}
+    .anliegen-grid,.karten,.ablauf-grid{grid-template-columns:1fr;}
+    .ablauf-grid{gap:var(--space-4);}
+    .site-footer .wrap{grid-template-columns:1fr;}
+    .hero-ctas .btn{width:100%;}
+    .sticky-bar{display:grid;grid-template-columns:1fr 1fr 1fr;position:fixed;inset:auto 0 0 0;z-index:90;background:rgba(34,51,47,.97);backdrop-filter:blur(10px);padding:10px max(10px,env(safe-area-inset-left)) max(10px,env(safe-area-inset-bottom));gap:8px;}
+    .sticky-bar a{display:flex;align-items:center;justify-content:center;gap:7px;min-height:48px;border-radius:12px;font-weight:700;font-size:14.5px;color:var(--paper);background:rgba(250,246,239,.1);border:1px solid rgba(250,246,239,.18);}
+    .sticky-bar a.call{background:var(--terra);color:#2b1a10;border:none;}
+    .sticky-bar svg{width:18px;height:18px;flex:none;}
+    .site-footer{padding-bottom:calc(var(--space-4) + 84px);}
+  }
+
+  /* ═══ 19 · PRINT (Aushang: Kontakt · Honorar · Anfahrt) ═══ */
+  @media print{
+    .nav,.menu,.burger,.sticky-bar,.breath-stage,.hero-ctas,.form,.demo-hinweis,.stimme,.anliegen-grid,.faq-list{display:none !important;}
+    body{background:#fff;color:#000;font-size:11pt;}
+    section{padding:14pt 0;page-break-inside:avoid;}
+    .hero{min-height:auto;padding-top:10pt;}
+    .kontakt,.site-footer{background:#fff;color:#000;}
+    .kontakt .sec-head h2,.kontakt .sec-head p,.k-zeile a,.k-zeile b,.site-footer a,.site-footer h3,.site-footer p,.site-footer li{color:#000;}
+    a::after{content:" (" attr(href) ")";font-size:9pt;color:#444;}
+    a[href^="#"]::after,.nav-cta::after{content:"";}
+  }
+  </style>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<!-- ═══ NAV ═══ -->
+<header class="nav" id="navbar">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 64 64" role="img" aria-label="Signet: drei atmende Kreise"><rect width="64" height="64" rx="16" fill="#1e5b56"/><circle cx="32" cy="32" r="21" fill="none" stroke="#faf6ef" stroke-width="2.4" opacity=".45"/><circle cx="32" cy="32" r="13" fill="none" stroke="#faf6ef" stroke-width="2.4" opacity=".75"/><circle cx="32" cy="32" r="5.2" fill="#faf6ef"/></svg>
+      <span style="display:block"><b>Nadia Michel</b><span>Körperorientierte Psychotherapie</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="#angebote">Angebote</a>
+      <a href="#ueber-mich">Über mich</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#honorar">Honorar</a>
+      <a href="#fragen">Fragen</a>
+      <a class="nav-cta" href="#kontakt">Kennenlern-Telefonat</a>
+    </nav>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="menu" id="menu" aria-label="Mobiles Menü">
+  <a href="#angebote">Angebote</a>
+  <a href="#ueber-mich">Über mich</a>
+  <a href="#ablauf">Ablauf</a>
+  <a href="#honorar">Honorar</a>
+  <a href="#fragen">Fragen</a>
+  <a href="#anfahrt">Anfahrt</a>
+  <a class="nav-cta btn" href="#kontakt">Kostenloses Kennenlern-Telefonat</a>
+</nav>
+
+<main id="inhalt">
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Praxis für körperorientierte Psychotherapie · Landsberg am Lech &amp; Weil</p>
+      <h1>Wieder <em>zuhause</em> in dir.</h1>
+      <p class="sub">Körperpsychotherapie · Paartherapie · Sexualtherapie</p>
+      <p class="lead">Beziehung, Sexualität, alte Muster, Stress oder ein Erlebnis, das dich nicht loslässt: Manche Wege geht man leichter in Begleitung. Ich bin Nadia Michel — ich arbeite mit Gespräch <b>und</b> Körper, auf Deutsch und auf Englisch.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#kontakt">Kostenloses Kennenlern-Telefonat</a>
+        <a class="btn btn-ghost" href="#angebote">Meine Angebote</a>
+      </div>
+      <p class="hero-phone">Oder direkt: <a href="tel:+4981919734751">08191 9734751</a> · Termine meist kurzfristig, auch abends &amp; am Wochenende.</p>
+    </div>
+    <div class="breath-stage reveal">
+      <!-- Atemkreise: das Markenmotiv — außen positioniert, innen animiert (SVG-transform-Regel) -->
+      <svg class="breath" viewBox="0 0 520 520" role="img" aria-label="Ruhige, konzentrische Kreise — wie ein langsamer Atem">
+        <g transform="translate(260 260)">
+          <g class="ring r1"><circle r="238" fill="none" stroke="#2f7a74" stroke-width="1.6" opacity=".35"/></g>
+          <g class="ring r2"><circle r="178" fill="none" stroke="#c4754e" stroke-width="1.4" opacity=".4"/></g>
+          <g class="ring r3"><circle r="120" fill="none" stroke="#2f7a74" stroke-width="1.8" opacity=".55"/></g>
+          <circle r="64" fill="#e9eddc"/>
+          <g transform="translate(0 6)">
+            <path d="M0,-34 C14,-16 14,4 0,22 C-14,4 -14,-16 0,-34 Z" fill="#2f7a74" opacity=".85"/>
+            <path d="M-26,-12 C-8,-12 4,0 8,18 C-12,20 -26,6 -26,-12 Z" fill="#1e5b56" opacity=".6"/>
+            <path d="M26,-12 C8,-12 -4,0 -8,18 C12,20 26,6 26,-12 Z" fill="#1e5b56" opacity=".6"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VERTRAUENSLEISTE ═══ -->
+<div class="trust" role="region" aria-label="Praxis-Fakten">
+  <div class="wrap">
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="1.8" aria-hidden="true"><path d="M12 21c-4.5-3.4-8-6.6-8-10.4C4 7 6.4 5 9 5c1.3 0 2.4.6 3 1.5C12.6 5.6 13.7 5 15 5c2.6 0 5 2 5 5.6 0 3.8-3.5 7-8 10.4Z"/></svg><span><b>Praxis seit 2013</b><span>eigene Praxis in Landsberg</span></span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.5 12h17M12 3.5c2.7 2.6 4 5.4 4 8.5s-1.3 5.9-4 8.5c-2.7-2.6-4-5.4-4-8.5s1.3-5.9 4-8.5Z"/></svg><span><b>Deutsch &amp; Englisch</b><span>Therapy in English</span></span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-6.5-5.3-6.5-10A6.5 6.5 0 0 1 12 4.5 6.5 6.5 0 0 1 18.5 11c0 4.7-6.5 10-6.5 10Z"/><circle cx="12" cy="11" r="2.4"/></svg><span><b>Landsberg &amp; Weil</b><span>zwei Praxen, zentral &amp; ländlich</span></span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="13" height="14" rx="2.5"/><path d="m16 10 5-3v10l-5-3"/></svg><span><b>Auch online</b><span>Video oder Telefon</span></span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ ANLIEGEN ═══ -->
+<section id="anliegen">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Womit du kommen kannst</p>
+      <h2>Vielleicht kennst du <em>eines davon</em>.</h2>
+      <p>Klientinnen und Klienten kommen häufig mit Themen wie diesen zu mir — allein oder als Paar:</p>
+    </div>
+    <div class="anliegen-grid">
+      <div class="anliegen-card reveal"><p>„Wir reden — und landen doch immer im selben Streit."</p><span>Beziehungs- und Paardynamiken verstehen und verändern.</span></div>
+      <div class="anliegen-card reveal"><p>„Nähe und Sexualität sind kompliziert geworden."</p><span>Allein oder zu zweit wieder einen entspannten Zugang finden.</span></div>
+      <div class="anliegen-card reveal"><p>„Da ist etwas Altes, das mich nicht loslässt."</p><span>Belastende Erfahrungen behutsam und in deinem Tempo verarbeiten.</span></div>
+      <div class="anliegen-card reveal"><p>„Ich funktioniere nur noch."</p><span>Stress und Erschöpfung verstehen — und wieder Raum für dich schaffen.</span></div>
+      <div class="anliegen-card reveal"><p>„Mein Körper meldet sich — aber niemand findet etwas."</p><span>Körperliche Beschwerden gemeinsam hinterfragen und einordnen.</span></div>
+      <div class="anliegen-card reveal"><p>„Es gibt keine Krise — ich will mich weiterentwickeln."</p><span>Persönlichkeitsentwicklung, Selbstbeziehung, ein guter Frühjahrsputz für innen.</span></div>
+    </div>
+    <p class="anliegen-note reveal">Auch im Umgang mit einer schweren Erkrankung begleite ich dich gern — psychoonkologische Begleitung gehört seit Jahren zu meiner Arbeit. Die Therapie ersetzt dabei keine ärztliche Behandlung; sie geht neben ihr her.</p>
+  </div>
+</section>
+
+<!-- ═══ LEISTUNGEN ═══ -->
+<section class="angebote" id="angebote">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Meine Angebote</p>
+      <h2>Gespräch und Körper — <em>beides gehört dazu.</em></h2>
+      <p>Worte erreichen viel. Aber Haltung, Atem und Anspannung erzählen oft, was noch keine Sprache hat. Deshalb arbeite ich körperorientiert — immer im Tempo, das für dich stimmt.</p>
+    </div>
+    <div class="karten">
+      <article class="karte reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#1e5b56" stroke-width="2" aria-hidden="true"><circle cx="24" cy="24" r="19" opacity=".35"/><circle cx="24" cy="24" r="12" opacity=".6"/><circle cx="24" cy="24" r="5" fill="#1e5b56" stroke="none"/></svg>
+        <h3>Körperpsychotherapie</h3>
+        <p>Einzelbegleitung, die deinen Körper bewusst einbezieht: Wahrnehmen, was sich zeigt — bei alten Mustern, Stress und psychosomatischen Themen.</p>
+        <p class="preis">Sitzung (90 Min.) · 140 €</p>
+      </article>
+      <article class="karte reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#1e5b56" stroke-width="2" aria-hidden="true"><circle cx="18" cy="24" r="11"/><circle cx="30" cy="24" r="11"/></svg>
+        <h3>Paartherapie</h3>
+        <p>Ein neutraler Raum, in dem beide gehört werden: wiederkehrende Konflikte verstehen, Verletzungen ansprechen, neue Wege im Miteinander erkunden — auch traumasensibel.</p>
+        <p class="preis">Erstgespräch 120 € · Folgetermin (2 Std.) 180 €</p>
+      </article>
+      <article class="karte reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#1e5b56" stroke-width="2" aria-hidden="true"><path d="M24 40c-8-6-14-11.5-14-18A8 8 0 0 1 24 15a8 8 0 0 1 14 7c0 6.5-6 12-14 18Z"/></svg>
+        <h3>Sexualtherapie &amp; -beratung</h3>
+        <p>Über Sexualität zu sprechen fällt vielen schwer — dabei gehört sie zu Lebendigkeit und Beziehung. Hier hat sie einen ruhigen, unaufgeregten Platz: allein oder als Paar.</p>
+        <p class="preis">Sitzung (90 Min.) · 140 €</p>
+      </article>
+      <article class="karte reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#1e5b56" stroke-width="2" aria-hidden="true"><path d="M10 30c4-1 6-9 9-9s4 6 7 6 4-12 8-12" opacity=".55"/><path d="M8 38h32M24 38v-6"/></svg>
+        <h3>Traumatherapie</h3>
+        <p>Was zu viel war, darf in deinem Tempo verarbeitet werden — körperorientiert und behutsam, unter anderem mit EMDR und NARM (Bindungstrauma).</p>
+        <p class="preis">Sitzung (90 Min.) · 140 €</p>
+      </article>
+      <article class="karte reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#1e5b56" stroke-width="2" aria-hidden="true"><path d="M8 24c5-10 11-10 16 0s11 10 16 0" opacity=".8"/><path d="M8 33c5-7 11-7 16 0s11 7 16 0" opacity=".4"/></svg>
+        <h3>Atemtherapie</h3>
+        <p>Dein Atem ist der direkteste Draht zu deinem Nervensystem. Schlicht, kraftvoll, ohne Gedöns — einzeln oder in der Atemgruppe.</p>
+        <p class="preis">Sitzung (2 Std.) · 180 €</p>
+      </article>
+      <article class="karte reveal">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#1e5b56" stroke-width="2" aria-hidden="true"><rect x="7" y="9" width="25" height="30" rx="3"/><path d="m32 19 9-5v20l-9-5"/></svg>
+        <h3>Online &amp; English</h3>
+        <p>Videosprechstunde oder Telefonsitzung, wenn der Weg zu weit ist — flexibel und diskret. Therapy sessions in English, too.</p>
+        <p class="preis">Online-Sitzung · 100 € / Std.</p>
+      </article>
+    </div>
+    <div class="weitere reveal">
+      <h3>Weitere Wege in meiner Praxis</h3>
+      <p>Je nach Anliegen fließen weitere Methoden und Angebote ein — sprich mich einfach darauf an:</p>
+      <ul>
+        <li>Hypnosetherapie</li><li>Tiefenpsychologisch fundierte Arbeit</li><li>Innere-Kind-Arbeit</li><li>Familienberatung</li><li>Kinder &amp; Jugendliche</li><li>Psychoonkologische Begleitung</li><li>Transgenerationale Themen</li><li>Atem- &amp; Yogagruppen</li><li>Fastenbegleitung</li><li>Supervision für Kolleg:innen</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FUNDSTÜCK ═══ -->
+<section class="stimme" id="stimme">
+  <div class="wrap reveal">
+    <svg viewBox="0 0 64 64" role="img" aria-label="Anführungszeichen"><path d="M14 38c0-10 6-17 15-19l2 5c-6 2-9 5-10 9 4 0 8 3 8 8 0 4.5-3.5 8-8 8s-7-4-7-11Zm24 0c0-10 6-17 15-19l2 5c-6 2-9 5-10 9 4 0 8 3 8 8 0 4.5-3.5 8-8 8s-7-4-7-11Z" fill="#c4754e"/></svg>
+    <blockquote>
+      <p>Ich bin keine Therapeutin. Ich bin eine Erinnerin. Ich erinnere dich wieder und wieder daran, den Weg deines Herzens zu gehen — so wie ich auch mich daran erinnern möchte, meinen zu gehen.</p>
+      <cite>— Nadia Michel</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ═══ ÜBER MICH ═══ -->
+<section class="ueber" id="ueber-mich">
+  <div class="wrap">
+    <figure class="ueber-figur reveal">
+      <div class="rahmen">
+        <!-- HIER: nach Freigabe durch echtes Porträt ersetzen (Foto-Rechte klären!) -->
+        <svg viewBox="0 0 400 460" role="img" aria-label="Platzhalter-Illustration: Sonne über ruhigen Hügeln am Lech">
+          <rect width="400" height="460" rx="14" fill="#faf6ef"/>
+          <circle cx="200" cy="170" r="92" fill="none" stroke="#2f7a74" stroke-width="1.5" opacity=".4"/>
+          <circle cx="200" cy="170" r="64" fill="none" stroke="#2f7a74" stroke-width="1.5" opacity=".6"/>
+          <circle cx="200" cy="170" r="34" fill="#c4754e" opacity=".9"/>
+          <path d="M0,330 C80,300 140,330 200,318 C270,304 330,322 400,302 L400,460 L0,460 Z" fill="#e9eddc"/>
+          <path d="M0,360 C90,336 160,362 230,350 C300,338 350,352 400,340 L400,460 L0,460 Z" fill="#2f7a74" opacity=".25"/>
+          <path d="M20,408 C90,396 150,410 220,402 C290,394 340,404 385,398" fill="none" stroke="#1e5b56" stroke-width="2.4" opacity=".55" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <figcaption>Hier kommt Nadias Porträt hin — echte Gesichter schaffen Vertrauen.</figcaption>
+    </figure>
+    <div class="ueber-text">
+      <p class="eyebrow reveal">Über mich</p>
+      <h2 class="reveal">Vom Controlling <em>zum Zuhören.</em></h2>
+      <p class="reveal">Mein erster Beruf waren Zahlen: Studium der internationalen Wirtschaftswissenschaften, dann Jahre im Controlling — zuletzt ein Jahrzehnt in den USA. Bis mein Körper deutlicher wurde als jede Auswertung und ich anfing, wirklich hinzusehen.</p>
+      <p class="reveal">Über Yoga fand ich zurück zu mir — und zu einer neuen Berufung. <b>2008</b> begann ich nebenberuflich therapeutisch zu arbeiten, <b>2013</b> eröffnete ich nach meiner Fortbildung zur Heilpraktikerin für Psychotherapie meine eigene Praxis in Landsberg. Heute kreist meine Arbeit vor allem um Paar- und Beziehungsdynamiken und das behutsame Verarbeiten von Traumata.</p>
+      <p class="reveal">Ich verstehe mich dabei als „Zuhörerin, Spiegel und Brückenbauerin": Du trägst die Antworten in dir — ich begleite dich dorthin. Mit Kompetenz, Herz und ohne Gedöns. In Landsberg teile ich mir die Praxisräume mit <a href="https://chinesische-medizin-landsberg.de" rel="noopener">Dr. Andrea Hellwig-Lenzen</a> (Chinesische Medizin) — eine Praxisgemeinschaft, die Komplementäres bewusst zusammenbringt.</p>
+      <div class="quali reveal">
+        <h3>Aus- und Weiterbildungen (Auswahl)</h3>
+        <ul>
+          <li>Heilpraktikerin für Psychotherapie (München)</li>
+          <li>Traumasensible Sexualtherapie n. Dr. Katharina Klees</li>
+          <li>Traumasensible Paartherapie n. Dr. Katharina Klees</li>
+          <li>Atemtherapeutin (Power of Breath)</li>
+          <li>Yogatherapeutin (Phoenix Rising, USA)</li>
+          <li>Psychoonkologin (n. André Jordan)</li>
+          <li>Hypnosetherapie (Master of Hypnotic Arts)</li>
+          <li>+ weitere — insgesamt 16 Aus- und Fortbildungen</li>
+        </ul>
+      </div>
+      <div class="hpg-box reveal">
+        <b>Gut zu wissen: Psychotherapie nach dem Heilpraktikergesetz (HeilprG)</b>
+        <p>Ich arbeite als Heilpraktikerin für Psychotherapie in eigener Privatpraxis — ohne Kassenzulassung, dafür ohne Wartelisten und Antragswege. Die Therapie ersetzt keine ärztliche Behandlung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RICHTIG HIER? ═══ -->
+<section class="richtig" id="richtig">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Ehrlich gesagt</p>
+      <h2>Bist du bei mir <em>richtig?</em></h2>
+    </div>
+    <div class="richtig-grid">
+      <div class="richtig-col reveal">
+        <h3>Du bist hier richtig, wenn …</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="2.2" aria-hidden="true"><path d="m5 13 4.5 4.5L19 8"/></svg>du bereit bist, dir selbst zu begegnen — auch da, wo es unbequem wird.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="2.2" aria-hidden="true"><path d="m5 13 4.5 4.5L19 8"/></svg>du eine Begleitung suchst, die Gespräch und Körper verbindet.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="2.2" aria-hidden="true"><path d="m5 13 4.5 4.5L19 8"/></svg>ihr als Paar neue Wege sucht statt schneller Schuldzuweisungen.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="2.2" aria-hidden="true"><path d="m5 13 4.5 4.5L19 8"/></svg>dir Diskretion und ein geschützter Rahmen wichtig sind.</li>
+        </ul>
+      </div>
+      <div class="richtig-col reveal">
+        <h3>Und ehrlicherweise nicht, wenn …</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#c4754e" stroke-width="2.2" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>du eine Leistung der gesetzlichen Krankenkasse suchst — meine Praxis ist eine Privatpraxis (Selbstzahler).</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#c4754e" stroke-width="2.2" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>du eine ärztliche oder medikamentöse Behandlung brauchst — die begleite ich gern, ersetze sie aber nicht.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#c4754e" stroke-width="2.2" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>du dich in einer akuten Krise befindest — dann zähle bitte nicht auf Wartezeiten, sondern auf die Nummern unten.</li>
+        </ul>
+        <div class="notfall">
+          <b>In akuten Krisen — sofort und rund um die Uhr:</b>
+          <p>Notruf <a href="tel:112">112</a> · Telefonseelsorge <a href="tel:08001110111">0800 111 0 111</a> (kostenfrei) · Krisendienst Bayern <a href="tel:08006553000">0800 655 3000</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABLAUF ═══ -->
+<section id="ablauf">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">So fangen wir an</p>
+      <h2>Drei Schritte — <em>kein Sprung ins kalte Wasser.</em></h2>
+    </div>
+    <div class="ablauf-grid">
+      <div class="schritt reveal">
+        <h3>Kennenlern-Telefonat</h3>
+        <p>15 Minuten am Telefon, kostenfrei und unverbindlich. Du erzählst kurz, worum es geht — und wir hören beide, ob es passt.</p>
+        <span class="meta">15 Min. · kostenfrei</span>
+      </div>
+      <div class="schritt reveal">
+        <h3>Erstgespräch</h3>
+        <p>75 Minuten Zeit für deine Geschichte, deine Themen und Ziele — und einen ersten gemeinsamen Blick darauf, wie ich dich begleiten kann.</p>
+        <span class="meta">75 Min. · 120 €</span>
+      </div>
+      <div class="schritt reveal">
+        <h3>Dein Rhythmus</h3>
+        <p>Viele kommen anfangs alle zwei Wochen, später monatlich. Folgetermine vereinbaren wir, wenn du dich meldest — so bleiben kurzfristige Termine frei.</p>
+        <span class="meta">90–120 Min. · 140–180 €</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HONORAR ═══ -->
+<section class="honorar" id="honorar">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Honorar &amp; Kassen</p>
+      <h2>Transparent — <em>ohne Sternchen.</em></h2>
+    </div>
+    <div class="honorar-grid">
+      <div class="preisliste reveal">
+        <!-- HIER: Preise ändern (Quelle: AGB/Leistungsseiten der Altseite) -->
+        <div class="zeile"><span class="was"><b>Kennenlern-Telefonat</b><span>15 Minuten, unverbindlich</span></span><span class="preis">0 €</span></div>
+        <div class="zeile"><span class="was"><b>Erstgespräch</b><span>75 Minuten — einzeln oder als Paar</span></span><span class="preis">120 €</span></div>
+        <div class="zeile"><span class="was"><b>Einzelsitzung</b><span>90 Minuten</span></span><span class="preis">140 €</span></div>
+        <div class="zeile"><span class="was"><b>Lange Sitzung / Paartermin</b><span>2 Stunden</span></span><span class="preis">180 €</span></div>
+        <div class="zeile"><span class="was"><b>Online- oder Telefonsitzung</b><span>pro Stunde</span></span><span class="preis">100 €</span></div>
+      </div>
+      <div class="kassen-box reveal">
+        <h3>Wer übernimmt das?</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#c4754e" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 9.5h6M9 14.5h6"/></svg><span><b>Gesetzlich versichert:</b> Heilpraktiker-Psychotherapie ist keine Kassenleistung — du zahlst selbst, per Rechnung.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="2" aria-hidden="true"><path d="m5 13 4.5 4.5L19 8"/></svg><span><b>Privat oder Zusatztarif „Heilpraktiker":</b> je nach Vertrag ist eine (Teil-)Erstattung möglich — prüfe das am besten vorab.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="2" aria-hidden="true"><path d="M12 3v18M5 8l7-5 7 5"/></svg><span><b>Dafür bekommst du:</b> meist kurzfristige Termine, keine Anträge, keine Diagnose in der Kassenakte — und volle Vertraulichkeit (Schweigepflicht nach § 203 StGB).</span></li>
+        </ul>
+        <p class="honorar-fine">Termine sind verbindlich; eine Absage ist bis 24 Stunden vorher kostenfrei. Honorare sind umsatzsteuerfrei nach § 4 Nr. 14 UStG.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section id="fragen">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Häufige Fragen</p>
+      <h2>Was du vielleicht <em>noch wissen willst.</em></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal"><summary>Was passiert beim kostenlosen Kennenlern-Telefonat?</summary><div class="antwort"><p>Wir telefonieren etwa 15 Minuten: Du erzählst in Ruhe, worum es dir geht, und kannst alle Fragen stellen. Danach entscheidest du — ohne jede Verpflichtung —, ob du ein Erstgespräch möchtest.</p></div></details>
+      <details class="faq-item reveal"><summary>Was heißt „körperorientiert" konkret — werde ich berührt?</summary><div class="antwort"><p>Körperorientiert heißt zuerst: Wir nehmen neben dem Gespräch auch wahr, was dein Körper erzählt — Atem, Haltung, Anspannung. Wie wir arbeiten, stimmen wir gemeinsam ab; nichts geschieht ohne dein ausdrückliches Einverständnis.</p></div></details>
+      <details class="faq-item reveal"><summary>Übernimmt meine Krankenkasse die Kosten?</summary><div class="antwort"><p>Die gesetzliche Kasse erstattet Heilpraktiker-Psychotherapie nicht — meine Praxis ist eine Privatpraxis. Private Versicherungen und Zusatztarife „Heilpraktiker für Psychotherapie" erstatten je nach Vertrag ganz oder teilweise; das klärst du am besten vorab mit deiner Versicherung.</p></div></details>
+      <details class="faq-item reveal"><summary>Wie schnell bekomme ich einen Termin?</summary><div class="antwort"><p>Meist kurzfristig — je nach Bedarf auch abends oder am Wochenende. Folgetermine vereinbare ich bewusst erst, wenn du dich wieder meldest: So bleiben Zeiten frei für Menschen, die schnell Unterstützung brauchen.</p></div></details>
+      <details class="faq-item reveal"><summary>Wie oft und wie lange dauert eine Begleitung?</summary><div class="antwort"><p>Das bestimmst du. Viele Klientinnen und Klienten kommen anfangs alle zwei Wochen und vergrößern die Abstände dann auf einmal im Monat oder seltener — so bleiben auch die Kosten überschaubar.</p></div></details>
+      <details class="faq-item reveal"><summary>Geht das auch online oder am Telefon?</summary><div class="antwort"><p>Ja. Du kannst eine Videosprechstunde über Doctolib buchen — oder wir telefonieren, denn fürs Spüren und Wahrnehmen braucht es nicht zwingend ein Bild. Auch der Wechsel zwischen online und vor Ort funktioniert gut.</p></div></details>
+      <details class="faq-item reveal"><summary>Do you offer therapy in English?</summary><div class="antwort"><p>Yes — I offer all sessions in English or German, in Landsberg, in Weil or online. Just mention your preferred language when you get in touch.</p></div></details>
+      <details class="faq-item reveal"><summary>Bleibt das alles vertraulich?</summary><div class="antwort"><p>Ja. Ich unterliege der Schweigepflicht nach § 203 StGB — auch gegenüber Angehörigen und Versicherungen. Auskünfte und Bescheinigungen erhältst ausschließlich du selbst; Aufzeichnungen der Sitzungen gibt es nicht.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ KONTAKT ═══ -->
+<section class="kontakt" id="kontakt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Kontakt</p>
+      <h2>Der erste Schritt ist <em>ein kurzes Hallo.</em></h2>
+      <p>Ruf an, schreib eine Nachricht oder buch direkt online — ganz wie es dir leichter fällt.</p>
+    </div>
+    <div class="kontakt-grid">
+      <div class="k-info reveal">
+        <div class="k-zeile"><svg viewBox="0 0 24 24" fill="none" stroke="#8fc4be" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg><span><b>Telefon</b><a href="tel:+4981919734751">08191 9734751</a><span>Während Sitzungen bin ich nicht erreichbar — sprich mir gern aufs Band.</span></span></div>
+        <div class="k-zeile"><svg viewBox="0 0 24 24" fill="none" stroke="#8fc4be" stroke-width="1.8" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg><span><b>E-Mail</b><a href="mailto:nadia@koerper-orientierte-psychotherapie.de">nadia@koerper-orientierte-psychotherapie.de</a></span></div>
+        <div class="k-zeile"><svg viewBox="0 0 24 24" fill="none" stroke="#8fc4be" stroke-width="1.8" aria-hidden="true"><path d="M12 3a8.5 8.5 0 0 0-7.3 12.9L3.5 20l4.2-1.1A8.5 8.5 0 1 0 12 3Z"/></svg><span><b>Messenger</b><a href="tel:+4915223786080">0152 23786080</a><span>Signal, Telegram oder WhatsApp — auch für Gruppen-Anmeldungen.</span></span></div>
+        <div class="k-zeile"><svg viewBox="0 0 24 24" fill="none" stroke="#8fc4be" stroke-width="1.8" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2.5"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><span><b>Online buchen</b><a href="https://www.doctolib.de/heilpraktiker-fur-psychotherapie/landsberg-am-lech/nadia-michel" rel="noopener">Termin über Doctolib wählen</a><span>Praxis, Video oder Telefon — Absage bis 24 h vorher kostenfrei.</span></span></div>
+      </div>
+      <form class="form reveal" id="demo-form" novalidate>
+        <p class="demo-hinweis"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e7c8b4" stroke-width="2" aria-hidden="true" style="flex:none;margin-top:1px"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg><span><b>Design-Vorschau:</b> Dieses Formular versendet noch nichts. Im Live-Betrieb landet deine Anfrage direkt und verschlüsselt in Nadias Postfach.</span></p>
+        <label for="f-name">Dein Name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+        <label for="f-mail">Deine E-Mail oder Telefonnummer</label>
+        <input id="f-mail" name="kontakt" type="text" autocomplete="email" required>
+        <label for="f-thema">Worum geht es?</label>
+        <select id="f-thema" name="thema">
+          <option>Einzelbegleitung</option>
+          <option>Paartherapie</option>
+          <option>Sexualtherapie / -beratung</option>
+          <option>Traumatherapie</option>
+          <option>Etwas anderes / weiß ich noch nicht</option>
+        </select>
+        <label for="f-msg">Deine Nachricht (optional)</label>
+        <textarea id="f-msg" name="nachricht" placeholder="Zwei, drei Sätze genügen völlig."></textarea>
+        <button class="btn btn-primary" type="submit">Nachricht senden</button>
+        <p class="form-fine">Bitte sende über das Formular keine sensiblen Gesundheitsinformationen — dafür ist das Gespräch da. Hinweise zum Datenschutz: <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+        <p class="form-status" id="form-ok" role="status">Angekommen. Im Live-Betrieb läge deine Nachricht jetzt in Nadias Postfach — bis dahin: einmal tief ein- und wieder ausatmen.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ANFAHRT ═══ -->
+<section id="anfahrt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Anfahrt &amp; Praktisches</p>
+      <h2>Zwei Orte — <em>such dir den näheren aus.</em></h2>
+    </div>
+    <div class="anfahrt-grid">
+      <div class="ort reveal">
+        <div class="karte-svg">
+          <svg viewBox="0 0 360 150" role="img" aria-label="Stilisierte Karte: Praxis Landsberg nahe Hauptplatz, am Lech">
+            <rect width="360" height="150" fill="#e9eddc"/>
+            <path d="M40,160 C60,110 50,70 80,20 L110,20 C85,70 95,110 75,160 Z" fill="#2f7a74" opacity=".3"/>
+            <path d="M120 40h70v26h-70zM150 80h80v22h-80zM120 116h64v20h-64z" fill="#faf6ef" stroke="#dfe5cf"/>
+            <circle cx="262" cy="78" r="11" fill="#c4754e"/>
+            <circle cx="262" cy="78" r="19" fill="none" stroke="#c4754e" opacity=".5"/>
+            <text x="244" y="116" font-family="Karla,Arial" font-size="13" font-weight="700" fill="#2c3b37">Praxis</text>
+            <text x="56" y="28" font-family="Karla,Arial" font-size="12" fill="#1e5b56" opacity=".8">Lech</text>
+          </svg>
+        </div>
+        <h3>Praxis Landsberg am Lech</h3>
+        <p class="adresse">Hubert-von-Herkomer-Straße 21 · 86899 Landsberg<br>Eingang auf der Rückseite: <b>Gogglgasse 28</b> — Klingel „Praxis"</p>
+        <p>Mitten im Zentrum, nahe Hauptplatz. Parken: Schlossberg-Tiefgarage (Ebene C, Ausgang Hauptplatz), ab 18 Uhr kostenlos an der Katharinenbrücke.</p>
+        <p class="hin"><a class="btn btn-ghost" href="https://maps.google.com/?q=Gogglgasse+28,+86899+Landsberg+am+Lech" rel="noopener">Route in Google Maps öffnen</a></p>
+      </div>
+      <div class="ort reveal">
+        <div class="karte-svg">
+          <svg viewBox="0 0 360 150" role="img" aria-label="Stilisierte Karte: Praxis Weil, Mühlangerstraße, mit Wiese und Parkplätzen">
+            <rect width="360" height="150" fill="#e9eddc"/>
+            <path d="M0,118 C70,98 150,124 230,108 C290,96 330,108 360,100 L360,150 L0,150 Z" fill="#2f7a74" opacity=".22"/>
+            <path d="M60 52h54v30h-54zM140 60h44v22h-44z" fill="#faf6ef" stroke="#dfe5cf"/>
+            <circle cx="226" cy="64" r="11" fill="#c4754e"/>
+            <circle cx="226" cy="64" r="19" fill="none" stroke="#c4754e" opacity=".5"/>
+            <text x="208" y="102" font-family="Karla,Arial" font-size="13" font-weight="700" fill="#2c3b37">Praxis</text>
+            <circle cx="300" cy="46" r="13" fill="none" stroke="#1e5b56" opacity=".55"/>
+            <path d="M300 39v7l5 4" fill="none" stroke="#1e5b56" opacity=".55" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>Praxis Geretshausen-Weil</h3>
+        <p class="adresse">Mühlangerstraße 5 · Geretshausen-Weil<br>Vor der Tür steht ein Buddha — Klingel „Praxis"</p>
+        <p>Kostenlose Besucher-Parkplätze direkt vor dem Haus (alternativ am Straßenrand hinter den Garagen, an der Wiese — bitte die Zufahrt für landwirtschaftliche Fahrzeuge freihalten).</p>
+        <p class="hin"><a class="btn btn-ghost" href="https://maps.google.com/?q=M%C3%BChlangerstra%C3%9Fe+5,+Weil+Geretshausen" rel="noopener">Route in Google Maps öffnen</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <h3>Nadia Michel</h3>
+      <!-- HIER: NAP-Daten (identisch mit Google Business Profil halten!) -->
+      <p>Praxis für körperorientierte Psychotherapie<br>Hubert-von-Herkomer-Straße 21 (Eingang Gogglgasse 28)<br>86899 Landsberg am Lech<br>Zweitpraxis: Mühlangerstraße 5, Geretshausen-Weil</p>
+      <p style="margin-top:10px"><a href="tel:+4981919734751">08191 9734751</a> · <a href="mailto:nadia@koerper-orientierte-psychotherapie.de">nadia@koerper-orientierte-psychotherapie.de</a></p>
+    </div>
+    <div>
+      <h3>Schnell hin</h3>
+      <ul>
+        <li><a href="#angebote">Angebote</a></li>
+        <li><a href="#honorar">Honorar &amp; Kassen</a></li>
+        <li><a href="#fragen">Häufige Fragen</a></li>
+        <li><a href="#anfahrt">Anfahrt</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Mehr von Nadia</h3>
+      <ul>
+        <li><a href="https://soundcloud.com/nadia-michel-828857416" rel="noopener">Podcast „Therapie ohne Gedöns"</a></li>
+        <li><a href="https://www.instagram.com/therapie_ohne_gedoens/" rel="noopener">Instagram</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+    <div class="foot-note">
+      <span>© <span id="jahr">2026</span> Nadia Michel · Alle Angaben ohne Gewähr — Design-Vorschau.</span>
+      <span>Diese Seite lädt keine Cookies und kein Tracking. Handgebaut in Landsberg am Lech.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ STICKY MOBIL-LEISTE ═══ -->
+<nav class="sticky-bar" aria-label="Schnellkontakt">
+  <a class="call" href="tel:+4981919734751"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>Anrufen</a>
+  <a href="https://www.doctolib.de/heilpraktiker-fur-psychotherapie/landsberg-am-lech/nadia-michel" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2.5"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>Termin</a>
+  <a href="#anfahrt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-6.5-5.3-6.5-10A6.5 6.5 0 0 1 12 4.5 6.5 6.5 0 0 1 18.5 11c0 4.7-6.5 10-6.5 10Z"/><circle cx="12" cy="11" r="2.4"/></svg>Anfahrt</a>
+</nav>
+
+<script>
+(function(){
+  "use strict";
+  /* Nav-Blur ab Scroll */
+  var nav=document.getElementById('navbar');
+  var onScroll=function(){nav.classList.toggle('scrolled',window.scrollY>10);};
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  /* Burger / Fullscreen-Menü */
+  var burger=document.getElementById('burger'),menu=document.getElementById('menu');
+  function closeMenu(){menu.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Menü öffnen');document.body.classList.remove('menu-locked');}
+  burger.addEventListener('click',function(){
+    var open=menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded',open?'true':'false');
+    burger.setAttribute('aria-label',open?'Menü schließen':'Menü öffnen');
+    document.body.classList.toggle('menu-locked',open);
+  });
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu();});
+
+  /* Reveals: IntersectionObserver + reduced-motion-Fallback */
+  var els=document.querySelectorAll('.reveal');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
+  if(reduce.matches||!('IntersectionObserver' in window)||document.documentElement.classList.contains('foto')){
+    els.forEach(function(el){el.classList.add('in');});
+  }else{
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+    },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){io.observe(el);});
+  }
+
+  /* Demo-Formular: ehrlich, kein Versand */
+  var form=document.getElementById('demo-form');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!form.reportValidity())return;
+    document.getElementById('form-ok').style.display='block';
+    form.querySelector('button[type=submit]').disabled=true;
+  });
+
+  document.getElementById('jahr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

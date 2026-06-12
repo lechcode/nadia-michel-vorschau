@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!-- LECHCODE Enthüllungsseite (QR-Ziel) · Variante KALT · 12.06.2026 -->
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>document.documentElement.classList.add('js');</script>
+<meta name="robots" content="noindex, nofollow" />
+<title>Eine Überraschung für Ihre Praxis, Frau Michel</title>
+<meta name="description" content="Wir haben Ihre Website neu gedacht — eine unverbindliche Design-Vorschau von Lechcode aus Landsberg." />
+<meta property="og:title" content="Eine Überraschung für Ihre Praxis, Frau Michel" />
+<meta property="og:description" content="Ihre Website — neu gedacht. Unverbindliche Design-Vorschau von Lechcode, Landsberg." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:image" content="https://lechcode.github.io/nadia-michel-vorschau/assets/og.jpg" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e5b56'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%23faf6ef' stroke-width='2.4' opacity='.45'/%3E%3Ccircle cx='32' cy='32' r='13' fill='none' stroke='%23faf6ef' stroke-width='2.4' opacity='.75'/%3E%3Ccircle cx='32' cy='32' r='5.2' fill='%23faf6ef'/%3E%3C/svg%3E" />
+<link rel="preload" href="assets/fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/karla-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{
+  --paper:#faf6ef; --sand:#f2ecdf; --sage:#e9eddc;
+  --ink:#2c3b37; --soft:#54655e; --teal:#2f7a74; --deep:#1e5b56; --night:#22332f;
+  --terra:#c4754e; --line:rgba(44,59,55,.14);
+  --serif:"Fraunces","Fraunces Fallback",Georgia,serif; --sans:"Karla","Karla Fallback",Arial,sans-serif;
+  --s1:clamp(14px, 1.6vw, 18px); --s2:clamp(20px, 2.4vw, 28px); --s3:clamp(30px, 3.8vw, 44px); --s4:clamp(46px, 6vw, 72px);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:clamp(16px, .4vw + 15px, 17.5px);line-height:1.65;-webkit-font-smoothing:antialiased;}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;letter-spacing:-.015em;text-wrap:balance;}
+h1 em,h2 em{font-style:normal;color:var(--deep);}
+p{max-width:62ch;}
+a{color:var(--deep);}
+img{display:block;max-width:100%;height:auto;}
+.wrap{width:min(980px,92vw);margin-inline:auto;}
+section{padding:var(--s4) 0;}
+.eyebrow{font-weight:700;font-size:clamp(13.5px,.3vw + 12.7px,14.5px);letter-spacing:.16em;text-transform:uppercase;color:var(--teal);display:inline-flex;align-items:center;gap:9px;}
+.eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--terra);}
+h2{font-size:clamp(25px, 2.1vw + 19px, 34px);margin-top:var(--s1);}
+.lead{color:var(--soft);font-size:clamp(18px,.65vw + 16.3px,20.5px);line-height:1.75;margin-top:var(--s2);}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--deep);color:var(--paper);text-decoration:none;font-weight:700;font-size:17px;padding:16px 30px;border-radius:999px;min-height:48px;box-shadow:0 22px 44px -22px rgba(30,91,86,.5);transition:transform .25s var(--ease),background .25s;}
+.btn:hover{background:var(--teal);transform:translateY(-2px);}
+.hero{padding-top:clamp(60px,10vh,110px);text-align:center;}
+.hero .wrap{max-width:780px;}
+.hero h1{font-size:clamp(32px, 4.6vw + 16px, 58px);}
+.hero .lead{margin-inline:auto;}
+.kreis-deko{width:84px;height:84px;margin:0 auto var(--s2);}
+.hinweis-zeile{margin-top:var(--s2);font-size:14.5px;color:var(--soft);}
+
+.slider-sec{background:var(--sand);border-block:1px solid var(--line);}
+.slider{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px -30px rgba(44,59,55,.4);max-height:72vh;aspect-ratio:760/980;}
+.slider img{width:100%;height:100%;object-fit:cover;object-position:top center;position:absolute;inset:0;}
+.slider .oben{position:absolute;inset:0;clip-path:inset(0 45% 0 0);}
+.slider .linie{position:absolute;top:0;bottom:0;left:55%;width:3px;background:var(--paper);transform:translateX(-50%);pointer-events:none;box-shadow:0 0 12px rgba(34,51,47,.35);}
+.slider .griff{position:absolute;top:50%;left:55%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;font-weight:700;color:var(--deep);pointer-events:none;box-shadow:0 10px 24px -8px rgba(44,59,55,.4);}
+.slider input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;}
+.slider-labels{display:flex;justify-content:space-between;margin-top:12px;font-weight:700;font-size:14.5px;color:var(--soft);}
+.slider-hint{text-align:center;color:var(--soft);font-size:14.5px;margin-top:6px;max-width:100%;}
+
+.phones{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3);align-items:start;margin-top:var(--s3);}
+.phone{max-width:300px;margin-inline:auto;}
+.phone .rahmen{border:10px solid var(--night);border-radius:34px;overflow:hidden;box-shadow:0 30px 60px -28px rgba(34,51,47,.55);background:#fff;}
+.phone img{width:100%;}
+.phone figcaption{text-align:center;margin-top:12px;font-weight:700;color:var(--soft);font-size:15px;}
+.stat-box{margin-top:var(--s3);background:var(--sage);border:1px solid var(--line);border-radius:16px;padding:var(--s2);text-align:center;}
+.stat-box b{color:var(--deep);}
+.stat-box p{margin-inline:auto;}
+
+.tacho{background:var(--night);color:var(--paper);text-align:center;}
+.tacho h2,.tacho .eyebrow{color:var(--paper);}
+.tacho .eyebrow{color:#8fc4be;}
+.tacho-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s2);margin-top:var(--s3);}
+.tacho-card{background:rgba(250,246,239,.07);border:1px solid rgba(250,246,239,.16);border-radius:16px;padding:var(--s2);}
+.tacho-card .alt{font-size:14px;color:#9fb3ab;text-decoration:line-through;text-decoration-color:rgba(196,117,78,.8);}
+.tacho-card .neu{font-family:var(--serif);font-size:clamp(26px,3vw,40px);color:#9ed4cd;line-height:1.1;margin-top:4px;}
+.tacho-card .label{font-size:14px;color:#bfcdc4;margin-top:8px;}
+.tacho-satz{margin:var(--s3) auto 0;font-family:var(--serif);font-style:italic;font-size:var(--s2);max-width:34ch;color:#f3eee2;line-height:1.5;}
+.tacho-fine{margin-top:var(--s2);font-size:13.5px;color:#9fb3ab;max-width:100%;}
+
+.recht-grid{display:grid;gap:var(--s1);margin-top:var(--s3);}
+.recht-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:var(--s2);}
+.recht-item svg{width:26px;height:26px;flex:none;margin-top:2px;}
+.recht-item b{display:block;}
+.recht-item p{color:var(--soft);font-size:15.5px;margin-top:4px;}
+.recht-fine{margin-top:var(--s2);font-size:13.5px;color:var(--soft);}
+
+.heisst{background:var(--sand);border-block:1px solid var(--line);}
+.heisst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s2);margin-top:var(--s3);}
+.heisst-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:var(--s2);}
+.heisst-card h3{font-size:var(--s2);}
+.heisst-card p{color:var(--soft);font-size:15.5px;margin-top:10px;}
+
+.cta-mitte{text-align:center;background:linear-gradient(180deg,var(--paper),var(--sage));}
+.cta-mitte .btn{font-size:19px;padding:20px 40px;}
+.cta-mitte p{margin:var(--s2) auto 0;color:var(--soft);}
+
+.brauchen ul{list-style:none;display:grid;gap:var(--s1);margin-top:var(--s3);}
+.brauchen li{display:flex;gap:13px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:var(--s2);color:var(--soft);}
+.brauchen li b{color:var(--ink);}
+.brauchen svg{width:24px;height:24px;flex:none;margin-top:2px;}
+
+.preise{background:var(--sage);border-block:1px solid var(--line);}
+.preis-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s2);margin-top:var(--s3);}
+.preis-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:var(--s2);display:flex;flex-direction:column;gap:10px;}
+.preis-card h3{font-size:var(--s2);}
+.preis-card .summe{font-family:var(--serif);font-size:clamp(26px,3vw,36px);color:var(--deep);}
+.preis-card .monat{font-size:14px;color:var(--soft);}
+.preis-card p{color:var(--soft);font-size:15px;flex-grow:1;}
+.start-box{margin-top:var(--s2);background:var(--paper);border:1.5px solid var(--terra);border-radius:16px;padding:var(--s2);display:flex;gap:14px;align-items:flex-start;}
+.start-box svg{width:28px;height:28px;flex:none;}
+.start-box p{color:var(--soft);font-size:15.5px;}
+.start-box b{color:var(--ink);}
+
+.site-footer{background:var(--night);color:#bfcdc4;padding:var(--s3) 0;text-align:center;font-size:14.5px;}
+.site-footer a{color:#cfe5e1;font-weight:700;}
+.site-footer p{max-width:100%;}
+.site-footer .fein{margin-top:10px;font-size:13px;color:#9fb3ab;}
+
+.js .reveal{opacity:0;transform:translateY(16px);transition:opacity .45s var(--ease),transform .45s var(--ease);}
+.js .reveal.in{opacity:1;transform:none;}
+@media (prefers-reduced-motion: reduce){.js .reveal{opacity:1;transform:none;transition:none;}.btn{transition:none;}}
+@media (max-width: 820px){
+  .tacho-grid{grid-template-columns:1fr 1fr;}
+  .heisst-grid,.preis-grid{grid-template-columns:1fr;}
+  .phones{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- 1 · Persönliche Begrüßung -->
+<section class="hero">
+  <div class="wrap">
+    <svg class="kreis-deko" viewBox="0 0 84 84" role="img" aria-label="Drei ruhige Kreise"><circle cx="42" cy="42" r="36" fill="none" stroke="#2f7a74" stroke-width="1.6" opacity=".35"/><circle cx="42" cy="42" r="24" fill="none" stroke="#c4754e" stroke-width="1.6" opacity=".45"/><circle cx="42" cy="42" r="10" fill="#1e5b56"/></svg>
+    <p class="eyebrow" style="justify-content:center">Eine kleine Überraschung aus der Nachbarschaft</p>
+    <h1>Hallo Frau Michel —<br><em>wir haben Ihnen etwas mitgebracht.</em></h1>
+    <p class="lead">Wir sind Lenny &amp; Michael von Lechcode, einem kleinen Web-Studio hier in Landsberg. Uns ist Ihre Praxis aufgefallen — und wir fanden: Ihre Arbeit verdient eine Website, die so wirkt wie Ihre Räume. Also haben wir Ihnen unverbindlich eine neue gebaut. Geschenkt zum Ansehen, ohne Haken — Sie entscheiden, was damit passiert.</p>
+    <p class="hinweis-zeile">Diese Seite ist privat: nicht bei Google auffindbar, nur über Ihren Link erreichbar.</p>
+  </div>
+</section>
+
+<!-- 2 · Vorher/Nachher-Slider -->
+<section class="slider-sec">
+  <div class="wrap">
+    <p class="eyebrow">Vorher · Nachher</p>
+    <h2>Ziehen Sie den Regler — <em>sehen Sie selbst.</em></h2>
+    <div class="slider reveal" id="slider" style="margin-top:var(--s3)">
+      <img src="vorschau-assets/slider-alt.jpg" alt="Ihre bisherige Website (Bildschirmfoto)" width="760" height="2216" fetchpriority="high">
+      <div class="oben" id="slider-oben">
+        <img src="vorschau-assets/slider-neu.jpg" alt="Der neue Entwurf Ihrer Website (Bildschirmfoto)" width="760" height="2216">
+      </div>
+      <div class="linie" id="slider-linie" aria-hidden="true"></div>
+      <div class="griff" id="slider-griff" aria-hidden="true">⇄</div>
+      <input type="range" min="0" max="100" value="55" id="slider-range" aria-label="Vergleich alt und neu: Regler nach links für die alte, nach rechts für die neue Seite">
+    </div>
+    <div class="slider-labels"><span>← Neu</span><span>Bisher →</span></div>
+    <p class="slider-hint">Links der neue Entwurf, rechts Ihre heutige Seite — beide in identischem Ausschnitt.</p>
+  </div>
+</section>
+
+<!-- 3 · Handy-Reframe -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Der wichtigste Blickwinkel</p>
+    <h2>So sehen Ihre Klientinnen Sie heute — <em>und so ab nächster Woche.</em></h2>
+    <div class="phones">
+      <figure class="phone reveal">
+        <div class="rahmen"><img src="vorschau-assets/phone-alt.jpg" alt="Ihre bisherige Website auf dem Smartphone" width="390" height="800" loading="lazy" decoding="async"></div>
+        <figcaption>Heute</figcaption>
+      </figure>
+      <figure class="phone reveal">
+        <div class="rahmen"><img src="vorschau-assets/phone-neu.jpg" alt="Der neue Entwurf auf dem Smartphone" width="390" height="800" loading="lazy" decoding="async"></div>
+        <figcaption>Der neue Entwurf</figcaption>
+      </figure>
+    </div>
+    <div class="stat-box reveal">
+      <p><b>Über 60 % aller Website-Besuche kommen heute vom Smartphone</b> (StatCounter) — gerade Menschen, die abends im Bett nach Hilfe suchen. Genau dort entscheidet sich der erste Eindruck.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · Tacho -->
+<section class="tacho">
+  <div class="wrap">
+    <p class="eyebrow">Gemessen, nicht behauptet</p>
+    <h2>Die Zahlen dahinter</h2>
+    <div class="tacho-grid">
+      <div class="tacho-card reveal"><div class="alt">14,9 Sekunden</div><div class="neu">1,7 s</div><div class="label">bis zum Hauptinhalt (Handy)</div></div>
+      <div class="tacho-card reveal"><div class="alt">56 / 100</div><div class="neu">100</div><div class="label">Google-Tempo-Note (mobil)</div></div>
+      <div class="tacho-card reveal"><div class="alt">2,8 MB</div><div class="neu">131 KB</div><div class="label">Seitengewicht — 22× leichter</div></div>
+      <div class="tacho-card reveal"><div class="alt">59</div><div class="neu">6</div><div class="label">Serveranfragen pro Aufruf</div></div>
+    </div>
+    <p class="tacho-satz">„Auf dem Handy wartete man bisher fast 15 Sekunden auf das Hauptbild — auf der neuen Seite keine zwei."</p>
+    <p class="tacho-fine">Methode: Google Lighthouse, je 3 Messungen, Median (12.06.2026). Alt: live. Neu: lokale Messung — auf echtem Hosting eher noch schneller. Auch am Desktop: Bestnote 100, vorher 89.</p>
+  </div>
+</section>
+
+<!-- 5 · Rechts-Block -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Das haben wir gleich mitkorrigiert</p>
+    <h2>Kleine Dinge, <em>die teuer werden können.</em></h2>
+    <div class="recht-grid">
+      <div class="recht-item reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c4754e" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5v.5"/></svg>
+        <div><b>Schriften &amp; Tracking von fremden Servern</b><p>Ihre Seite lädt Schriften von einem externen Dienst und bindet Google Analytics ein — deshalb braucht sie den Cookie-Banner. Die Schrift-Thematik hat schon Abmahnungen ausgelöst (LG München I, 2022). Die neue Seite lädt alles lokal: kein Tracking, keine Cookies, kein Banner nötig — ruhiger für Ihre Besucher, sicherer für Sie.</p></div>
+      </div>
+      <div class="recht-item reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c4754e" stroke-width="2" aria-hidden="true"><path d="M10.3 4.2 2.8 17a2 2 0 0 0 1.7 3h15a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4.5M12 17v.5"/></svg>
+        <div><b>Veralteter EU-Streitschlichtungs-Link</b><p>Ihr Impressum verlinkt die EU-Schlichtungsplattform — die wurde im Juli 2025 abgeschaltet; der Link führt ins Leere. Auf der neuen Seite ist das bereinigt.</p></div>
+      </div>
+      <div class="recht-item reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c4754e" stroke-width="2" aria-hidden="true"><path d="M6 3h9l4 4v14H6Z"/><path d="M14 3v5h5M9.5 13h6M9.5 17h6"/></svg>
+        <div><b>Pflichtangaben für Heilberufe</b><p>Für Heilpraktikerinnen gehören Berufsbezeichnung, zuständige Aufsichtsbehörde und die berufsrechtlichen Regelungen ins Impressum — das fehlt aktuell. Wir haben das neue Impressum dafür vorbereitet; es fehlen nur zwei Angaben von Ihnen (siehe unten).</p></div>
+      </div>
+      <div class="recht-item reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c4754e" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+        <div><b>Anrufen ging nur mit Abtippen</b><p>Auf Ihrer Seite ist keine Telefonnummer und keine E-Mail antippbar — am Handy muss man Ihre Nummer abschreiben. Auf der neuen Seite genügt ein Tipp: anrufen, mailen, Route öffnen.</p></div>
+      </div>
+    </div>
+    <p class="recht-fine">Alles ehrlich gemeint und belegbar — keine Rechtsberatung, nur das, was uns beim sorgfältigen Hinsehen aufgefallen ist und was wir direkt mitgelöst haben.</p>
+  </div>
+</section>
+
+<!-- 6 · Was das heißt -->
+<section class="heisst">
+  <div class="wrap">
+    <p class="eyebrow">Was das für Sie heißt</p>
+    <h2>Zeit und Geld — <em>beides bleibt bei Ihnen.</em></h2>
+    <div class="heisst-grid">
+      <div class="heisst-card reveal"><h3>Schneller als jede Agentur</h3><p>Klassische Agenturen rechnen vierstellig und brauchen Wochen bis Monate; jede Änderung kostet extra. Wir bauen in Tagen — und Textänderungen schicken Sie uns einfach per E-Mail oder Sprachnachricht.</p></div>
+      <div class="heisst-card reveal"><h3>Baukasten-Kosten ade</h3><p>Ihre heutige Seite läuft auf einem Baukasten-Abo — je nach Tarif oft mehrere hundert Euro im Jahr. Die neue Seite gehört Ihnen und läuft auf kostenlosem, schnellem Hosting.</p></div>
+      <div class="heisst-card reveal"><h3>Keine leisen Verluste</h3><p>Jede Woche mit einer Seite, die Besucher beim Warten verliert, kostet leise Anfragen — deshalb bauen wir in Tagen, nicht in Monaten. Und Ihre guten Google-Platzierungen ziehen beim Umzug sorgfältig mit um.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Button zur Demo -->
+<section class="cta-mitte">
+  <div class="wrap">
+    <h2>Genug gelesen — <em>erleben Sie sie.</em></h2>
+    <p style="margin-bottom:var(--s3)">Am besten direkt auf dem Handy öffnen. Alle Texte sind Vorschläge aus Ihren eigenen Informationen — nichts ist in Stein gemeißelt.</p>
+    <a class="btn" href="index.html">Ihre neue Seite ansehen</a>
+    <p style="font-size:14.5px">Tipp: Probieren Sie das Menü, die Fragen-Sektion und den Anruf-Knopf unten am Handy.</p>
+  </div>
+</section>
+
+<!-- 8 · Was wir noch brauchen -->
+<section class="brauchen">
+  <div class="wrap">
+    <p class="eyebrow">Damit es echt werden kann</p>
+    <h2>Was wir noch <em>von Ihnen bräuchten</em></h2>
+    <ul>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="2" aria-hidden="true"><path d="M6 3h9l4 4v14H6Z"/><path d="M14 3v5h5"/></svg><span><b>Zwei Impressums-Angaben:</b> In welchem Jahr und von welcher Behörde wurde Ihre Heilpraktiker-Erlaubnis (Psychotherapie) erteilt — und welches Gesundheitsamt ist Ihre Aufsichtsbehörde? Ohne diese Pflichtangaben lassen wir die Seite bewusst noch unsichtbar für Google.</span></li>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="9" cy="11" r="2"/><path d="m5 19 5-5 3 3 4-4 2 2"/></svg><span><b>Ihre Fotos:</b> Wir würden gern Ihr Porträt und Ihre Praxisräume zeigen. Das schöne Zeitungs-Porträt (Foto: Christian Rudnik) dürfen wir nur mit geklärten Rechten verwenden — haben Sie die Freigabe, oder machen wir kurz neue Bilder?</span></li>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span><b>Drei kleine Klärungen:</b> die Reiki-Preise (Ihre Übersicht sagt 180 €, die Unterseiten 160 €), aktuelle Gruppentermine und Ihre Wunsch-Kontaktwege (WhatsApp-Community behalten? Doctolib prominent?).</span></li>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="#2f7a74" stroke-width="2" aria-hidden="true"><path d="M12 3v18M5 8l7-5 7 5"/></svg><span><b>Falls vorhanden:</b> Ihr Logo als Vektordatei (SVG/AI) — sonst zeichnen wir es kostenlos nach, damit es auf jedem Bildschirm gestochen scharf ist.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 9 · Preise (KALT: Pakete + Startangebot-Hinweis) -->
+<section class="preise">
+  <div class="wrap">
+    <p class="eyebrow">Falls es Ihnen gefällt</p>
+    <h2>Ehrliche Preise — <em>kein Kleingedrucktes.</em></h2>
+    <div class="preis-grid">
+      <div class="preis-card reveal"><h3>Starter</h3><div class="summe">690 €</div><div class="monat">+ 19 €/Monat Pflege (monatlich kündbar)</div><p>Der One-Pager, den Sie hier sehen — inklusive Texten, Impressum &amp; Datenschutz, Umzug Ihrer Domain und allen Änderungswünschen zum Start.</p></div>
+      <div class="preis-card reveal"><h3>Praxis</h3><div class="summe">1.200 €</div><div class="monat">+ 29 €/Monat Pflege</div><p>Mehrseitig: eigene Unterseiten für Paartherapie, Sexualtherapie, Gruppen &amp; Co. — gut für Google, ideal bei Ihrem breiten Angebot und Ihren bestehenden Platzierungen.</p></div>
+      <div class="preis-card reveal"><h3>Premium</h3><div class="summe">ab 1.900 €</div><div class="monat">+ 39 €/Monat Pflege</div><p>Alles aus Praxis plus Extras nach Wunsch: Online-Buchung tiefer integriert, Podcast-Bereich, englische Seitenversion, Workshops-Kalender.</p></div>
+    </div>
+    <div class="start-box reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#c4754e" stroke-width="2" aria-hidden="true"><path d="M12 3l2.4 5.2 5.6.7-4.1 3.9 1.1 5.6-5-2.8-5 2.8 1.1-5.6L4 8.9l5.6-.7Z"/></svg>
+      <p><b>Übrigens:</b> Wir starten gerade in Landsberg und bauen die ersten zehn Websites für <b>einmalig 500 € inklusive Umzug</b> (Pflege 19 €/Monat, monatlich kündbar). Wenn Sie mögen, gehört Ihre dazu — sagen Sie es uns einfach im Gespräch.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · Footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p><b>Unverbindliche Design-Vorschau</b> — mit Sorgfalt erstellt von <b>Lechcode</b> (Lenny Schönbach &amp; Michael Storz GbR), Landsberg am Lech.</p>
+    <p style="margin-top:8px">Fragen, Wünsche, oder einfach mal reden? <a href="mailto:info@lechcode.de">info@lechcode.de</a></p>
+    <p class="fein">Diese Vorschau ist nicht öffentlich beworben und für Suchmaschinen gesperrt. Sie nutzt ausschließlich öffentlich zugängliche Informationen Ihrer bisherigen Website — und wird auf Ihren Wunsch selbstverständlich sofort gelöscht. Keine Cookies, kein Tracking.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  /* Slider */
+  var range=document.getElementById('slider-range'),oben=document.getElementById('slider-oben'),griff=document.getElementById('slider-griff'),linie=document.getElementById('slider-linie');
+  function setP(v){var r=100-v;oben.style.clipPath='inset(0 '+r+'% 0 0)';griff.style.left=v+'%';linie.style.left=v+'%';}
+  range.addEventListener('input',function(){setP(this.value);});
+  setP(55);
+  /* Reveals */
+  var els=document.querySelectorAll('.reveal');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
+  if(reduce.matches||!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in');});}
+  else{var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.1});els.forEach(function(el){io.observe(el);});}
+})();
+</script>
+</body>
+</html>
